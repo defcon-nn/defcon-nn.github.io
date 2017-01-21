@@ -13,17 +13,17 @@
 			<div id="top_menu">
 				<ul>
 					<li>
-						<a href="index.html">Встречи</a>
+						<a href="{{ site.baseurl }}">Встречи</a>
 					</li>
 					<li>
-						<a href="about.html">О сообществе</a>
+						<a href="{{ "/about.html" | prepend: site.baseurl }}">О сообществе</a>
 					</li>
 				</ul>
 
 				<div id="logo">
 					<h1>
-						DefCon Group
-						<span>/ Нижний Новгород</span>
+						DEF CON
+						<span>/ Нижний&nbsp;Новгород</span>
 					</h1>
 				</div>
 			</div>
@@ -33,7 +33,7 @@
 					<tr>
 						<td><div id="map_pointer"></div></td>
 						<td>
-							<span id="current_event_date">Митап 0x01</span><br>
+							<span id="current_event_date">Встреча 0x01</span><br>
 							<span id="current_event_time">12 февраля в 12:00</span><br>
 							<span id="current_event_place">Ковалихинская, 8</span>
 						</td>
@@ -65,7 +65,7 @@
 
 			<hr/>
 
-			<p>По любым организационным вопросам и с любыми предложениями пишите на &nbsp;<span class="inline_icon icon-email"></span> <a href="mailto:org@defcon-nn.ru">org@defcon-nn.ru</a>.</p>
+			<p>По любым организационным вопросам и с любыми предложениями пишите на &nbsp;<span class="inline_icon icon-email"></span>&nbsp;<a href="mailto:org@defcon-nn.ru">org@defcon-nn.ru</a>.</p>
 		</div>
 	</body>
 </html>

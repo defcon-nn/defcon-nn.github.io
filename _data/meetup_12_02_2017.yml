@@ -9,7 +9,7 @@
 - title: Устройство и безопасность гипервизоров
   speaker: Евгений Яковлев
   company: Virtuozzo
-  avatar: anon.png
+  avatar: evgeny.png
   time: "12:30"
   bio: Системный разработчик, занимаюсь низкоуровневыми вещами в контексте продуктов ИБ около 9 лет. Ядра ОС, фирмварь, защита данных и аппаратная виртуализация. Люблю анализ защищенности и реверсинг низкоуровневого кода. Разработчик опенсорсного гипервизора QEMU/KVM в компании Virtuozzo.
   description: Узнаем что такое аппаратная виртуализация и как устроен гипервизор. Посмотрим на поверхность атаки, типичные ошибки реализации и уязвимости современных гипервизоров.
@@ -18,7 +18,7 @@
 - title: Безопасность данных через оверлейные сети и SAFE Network
   speaker: Никита Баксаляр
   company: MaidSafe
-  avatar: anon.png
+  avatar: nikita.png
   time: "13:30"
   bio:
   description:
@@ -41,3 +41,12 @@
   bio:
   description:
   page: whitebox.html
+
+- title: "DefconNN CTF Starter"
+  speaker: Максим Лебедев, Илья Ленин
+  company: 
+  avatar: [maksim.png, ilya.png]
+  time: "16:30"
+  bio:
+  description: "Локальные командные соревнования типа \"Capture the flag\" или \"Захват флага\" в области информационной безопасности в формате \"jeopardy\"."
+  page: ctf.html

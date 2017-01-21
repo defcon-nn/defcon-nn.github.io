@@ -3,11 +3,9 @@ html {
 }
 
 body {
-	margin: 25px 0px 50px 0px;
+	margin: 25px auto 50px auto;
 	font-family: 'Exo 2', sans-serif;
 	max-width: 1100px;
-	min-width: 400px;
-	display: inline-block;
 	text-align: left;
 	font-weight: normal;
 	line-height: 1.4;
@@ -216,4 +214,24 @@ hr {
 
 .icon-vk {
 	background-image: url(../images/contact_icons/vk.png);
+}
+
+.logos {
+	float: right;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.logos li {
+	display: inline-block;
+}
+
+.logos a {
+	border: none;
+}
+
+.logos li:last-of-type {
+	border-right: 0;
+	margin-right: 0;
 }
