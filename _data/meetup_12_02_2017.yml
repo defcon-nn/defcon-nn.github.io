@@ -1,0 +1,43 @@
+- title: Вступительное слово
+  speaker: Организаторы
+  company: DEF CON NN
+  avatar: anon.png
+  time: "12:00"
+  description: Расскажем о сообществе и целях проекта.
+  page: intro.html
+
+- title: Устройство и безопасность гипервизоров
+  speaker: Евгений Яковлев
+  company: Virtuozzo
+  avatar: anon.png
+  time: "12:30"
+  bio: Системный разработчик, занимаюсь низкоуровневыми вещами в контексте продуктов ИБ около 9 лет. Ядра ОС, фирмварь, защита данных и аппаратная виртуализация. Люблю анализ защищенности и реверсинг низкоуровневого кода. Разработчик опенсорсного гипервизора QEMU/KVM в компании Virtuozzo.
+  description: Узнаем что такое аппаратная виртуализация и как устроен гипервизор. Посмотрим на поверхность атаки, типичные ошибки реализации и уязвимости современных гипервизоров.
+  page: hypervisor.html
+
+- title: Безопасность данных через оверлейные сети и SAFE Network
+  speaker: Никита Баксаляр
+  company: MaidSafe
+  avatar: anon.png
+  time: "13:30"
+  bio:
+  description:
+  page: p2p.html
+
+- title: "Крипто-инструменты для всех"
+  speaker: Артём Попцов
+  company: Нижегородский радиотехнический колледж
+  avatar: anon.png
+  time: "14:30"
+  bio:
+  description:
+  page: cryptotools.html
+
+- title: "White-box аудит безопасности Android-приложений"
+  speaker: Wire Snark
+  company: 
+  avatar: anon.png
+  time: "15:30"
+  bio:
+  description:
+  page: whitebox.html

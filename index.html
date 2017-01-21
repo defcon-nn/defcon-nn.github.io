@@ -1,1 +1,44 @@
-Hello world
+---
+layout: default
+---
+
+<div id="introduction">
+	<p><strong>DEF CON Нижний Новгород</strong> — сообщество объединяющее людей, интересующихся изучением и необычным применением современных технологий, часто в направлении информационной безопасности — то есть, всем что понимается в широком положительном смысле слова «хакинг». Основанное в духе <a href="https://defcongroups.org/dcgfaq.html">DEF CON</a>, сообщество открыто для всех, кто желает учиться новому, помогать развиваться другим и просто общаться с людми с такой же культурой.</p>
+
+	<p>Наша первая встреча пройдет в формате мини-конференции <strong>12 февраля</strong> при поддержке Яндекса.</p>
+</div>
+
+<div id="events_table">
+	<h2>Программа митапа 0x01 на воскресенье, 12 февраля</h2>
+	<ul id="talks">
+		{% for talk in site.data.meetup_12_02_2017 %}
+		<li>
+			<div class="speaker_avatar"> <!-- Аватарка -->
+				<a href="persons/jesse.html" class="unstyled_link">
+					<img src="{{ "/images/avatars/" | append: talk.avatar | prepend: site.baseurl }}" alt="Фотография">
+				</a>
+			</div>
+			<div class="speaker_name"> <!-- Имя и должность -->
+				<strong>{{ talk.speaker }}</strong>
+				<br>
+				{{ talk.company }}
+			</div>
+			<div class="time"> <!-- Время выступления -->
+				{{ talk.time }}
+			</div>
+			<div class="about_talk"> <!-- Краткое описание выступления -->
+				<strong>{{ talk.title }}</strong><br/>
+				{% if talk.description %}
+				{{ talk.description }}<br/>
+				{% endif %}
+				<a href="/meetups/0x01/{{ talk.page }}">Подробнее&nbsp;></a>
+			</div>			
+		</li>
+		{% endfor %}
+
+		<div id="directions">
+			<h2>Как добраться</h2>
+			Мероприятие пройдет в офисе Яндекса по адресу: <em>Нижний Новгород, ул. Ковалихинская, 8, Центр международной торговли, Медиа Страйк Холл, 10 этаж</em>. Ближайшая станция метро — Горьковская.
+		</div>
+	</ul>
+</div>

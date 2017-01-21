@@ -1,0 +1,219 @@
+html {
+	text-align: center;
+}
+
+body {
+	margin: 25px 0px 50px 0px;
+	font-family: 'Exo 2', sans-serif;
+	max-width: 1100px;
+	min-width: 400px;
+	display: inline-block;
+	text-align: left;
+	font-weight: normal;
+	line-height: 1.4;
+	font-size: 14pt;
+	background: white;
+	color: #151515;
+}
+
+@media screen and (max-width: 1200px) {
+	body {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+}
+
+a {
+	color: #175c91;
+	text-decoration: none;
+	border-bottom: 1px solid #94c8ef;
+}
+
+a.unstyled_link {
+	text-decoration: none;
+	border-bottom: none;
+	color: inherit;
+}
+
+h1 {
+	font-size: 30pt;
+}
+
+#logo span {
+	font-weight: normal;
+	font-size: 18pt;
+}
+
+h2 {
+	font-size: 15pt;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+header {
+	margin-bottom: 25px;
+}
+
+#place_and_time {
+	float: right;
+	margin-top: 15px;
+	display: inline-block;
+	right: 0;
+}
+
+@media screen and (max-width: 1150px) {
+	#talks li .about_talk {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#place_and_time {
+		margin-left: 40px;
+		display: block;
+		float: none;
+	}
+
+	#talks li .about_talk {
+		margin-right: 0px;
+	}
+}
+
+
+#map_pointer {
+	background-image: url(../images/map_pin.png);
+	width: 52px;
+	height: 80px;
+	margin-right: 15px;
+}
+
+#current_event_date {
+	font-size: 14pt;
+	font-weight: 600;
+}
+
+#current_event_time {
+	font-size: 14pt;
+}
+
+#top_menu {
+	display: inline-block;
+	font-size: 15pt;
+}
+
+#top_menu ul {
+	padding-left: 0px;
+	margin-bottom: 20px;
+}
+
+#top_menu li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 30px;
+}
+
+
+#black_bar {
+	background-color: #000;
+	margin-bottom: 20px;
+}
+
+hr {
+	border: none;
+	border-bottom: 1px solid #eaeaea;
+}
+
+#talks {
+	padding-left: 0px;
+}
+
+#talks li {
+	list-style-type: none;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	border: 1px solid #eaeaea;
+	border-radius: 15px;
+	padding: 15px 15px;
+}
+
+#talks li:hover {
+	background-color: #f5f5f5;
+	border-radius: 15px;
+}
+
+#talks li > div {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+#talks li > div:nth-child-last(1) {
+	margin-right: 0px;
+}
+
+#talks li .speaker_avatar {
+	max-width: 100px;
+}
+
+#talks li .speaker_name {
+	width: 175px;
+}
+
+#talks li .time {
+	width: 100px;
+	font-size: 19px;
+	text-align: center;
+}
+
+#talks li .about_talk {
+	max-width: 600px;
+}
+
+.speaker_name {
+	font-style: italic;
+}
+
+.speaker_name strong {
+	font-style: normal;
+	color: #587b14;
+}
+
+#contact_list {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+#contact_list li {
+	margin-top: 15px;
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 35px;
+}
+
+.inline_icon {
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 5px;
+	height: 24px;
+	width: 24px;
+}
+
+#introduction {
+	padding: 15px 0px;
+}
+
+.icon-email {
+	background-image: url(../images/contact_icons/email.png);
+}
+
+.icon-telegram {
+	background-image: url(../images/contact_icons/telegram.png);
+}
+
+.icon-twitter {
+	background-image: url(../images/contact_icons/twitter.png);
+}
+
+.icon-vk {
+	background-image: url(../images/contact_icons/vk.png);
+}
