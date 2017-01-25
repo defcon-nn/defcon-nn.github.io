@@ -42,4 +42,3 @@ permalink: /about.html
 - И другие.
 
 [Подробнее](ethics.html)
-
