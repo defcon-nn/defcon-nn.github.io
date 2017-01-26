@@ -10,37 +10,20 @@
 	</head>
 	<body>
 		<header>
+			<h1 id="logo">
+				<img src="{{ "/images/logo.svg" | prepend: site.baseurl }}" alt="DEF CON / Нижний Новгород" width="300" />
+			</h1>
+
 			<div id="top_menu">
 				<ul>
 					<li>
-						<a href="{{ site.baseurl }}">Встречи</a>
+						<a href="{{ site.baseurl }}/">Встречи</a>
 					</li>
 					<li>
 						<a href="{{ "/about.html" | prepend: site.baseurl }}">О сообществе</a>
 					</li>
 				</ul>
-
-				<div id="logo">
-					<h1>
-						DEF CON
-						<span>/ Нижний&nbsp;Новгород</span>
-					</h1>
-				</div>
 			</div>
-
-			<div id="place_and_time">
-				<table>
-					<tr>
-						<td><div id="map_pointer"></div></td>
-						<td>
-							<span id="current_event_date">Встреча 0x01</span><br>
-							<span id="current_event_time">12 февраля в 12:00</span><br>
-							<span id="current_event_place">Ковалихинская, 8</span>
-						</td>
-					</tr>
-				</table>
-			</div>
-
 		</header>
 
 		{{ content }}
