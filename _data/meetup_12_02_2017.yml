@@ -25,7 +25,10 @@
   page: p2p.html
 
 - title: "Криптография, которая просто работает"
-  speaker: [{ name: Артём Попцов, company: Нижегородский радиотехнический колледж, Cadrspace, Нижний Новгород, avatar: anon.png }]
+  speaker:
+    - name: Артём Попцов
+      company: Нижегородский радиотехнический колледж, Cadrspace, Нижний Новгород
+      avatar: anon.png
   time: "14:30"
   bio:
   description:
