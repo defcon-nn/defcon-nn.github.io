@@ -145,21 +145,32 @@ hr {
 	margin-right: 15px;
 }
 
+.speaker {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#talks li .speaker > div  {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
 #talks li > div:nth-child-last(1) {
 	margin-right: 0px;
 }
 
-#talks li .speaker_avatar {
+.speaker-avatar {
 	max-width: 100px;
 }
 
-#talks li .speaker_avatar > img {
+.speaker-avatar > img {
 	max-width: 100px;
 	width: 100px;
 	border-radius: 50px 50px;
 }
 
-#talks li .speaker_name {
+.speaker-name {
 	width: 175px;
 }
 
@@ -173,11 +184,15 @@ hr {
 	max-width: 600px;
 }
 
-.speaker_name {
+#talks li.smaller .about_talk {
+	max-width: 400px;
+}
+
+.speaker-name {
 	font-style: italic;
 }
 
-.speaker_name strong {
+.speaker-name strong {
 	font-style: normal;
 	color: #587b14;
 }
