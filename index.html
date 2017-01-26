@@ -13,16 +13,20 @@ layout: default
 
 	<ul id="talks">
 		{% for talk in site.data.meetup_12_02_2017 %}
-		<li>
-			{% for avatar in talk.avatar %}
-			<div class="speaker_avatar">
-				<img src="{{ "/images/avatars/" | append: avatar | prepend: site.baseurl }}" alt="Фотография">
-			</div>
-			{% endfor %}
-			<div class="speaker_name">
-				<strong>{{ talk.speaker }}</strong>
-				<br>
-				{{ talk.company }}
+		<li{% if talk.css_class %} class="{{ talk.css_class }}"{% endif %}>
+			<div class="speakers">
+				{% for speaker in talk.speaker %}
+				<div class="speaker">
+					<div class="speaker-avatar">
+						<img src="{{ "/images/avatars/" | append: speaker.avatar | prepend: site.baseurl }}" alt="Фотография">
+					</div>
+					<div class="speaker-name">
+						<strong>{{ speaker.name }}</strong>
+						<br>
+						{{ speaker.company }}
+					</div>
+				</div>
+				{% endfor %}
 			</div>
 			<div class="time">
 				{{ talk.time }}
