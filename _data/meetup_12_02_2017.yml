@@ -42,6 +42,15 @@
   description:
   page: whitebox.html
 
+- title: "Корреляция сетевых событий средствами IDS Suricata"
+  speaker: Кирилл Шипулин
+  company: Positive Technologies
+  avatar: kirill.jpg
+  time: "16:00"
+  bio: Исследователь из компании Positive Technologies. Занимается исследованием сетевых атак и написанием сигнатур для Suricata IDS.
+  description: В 2014 году в Suricata IDS появилась новая фича под названием xbits. Она позволяет производить корреляцию сетевых событий на различных сетевых сессиях и временных промежутках. Речь пойдёт о том, какие сетевые атаки  и аномалии были невидимы для Suricata IDS до этого и какие возможности xbits дают исследователям сетевых угроз.
+  page: suricata.html
+
 - title: "DefconNN CTF Starter"
   speaker: Максим Лебедев, Илья Ленин
   company: 

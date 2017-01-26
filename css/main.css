@@ -153,6 +153,12 @@ hr {
 	max-width: 100px;
 }
 
+#talks li .speaker_avatar > img {
+	max-width: 100px;
+	width: 100px;
+	border-radius: 50px 50px;
+}
+
 #talks li .speaker_name {
 	width: 175px;
 }
