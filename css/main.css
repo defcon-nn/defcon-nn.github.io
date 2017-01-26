@@ -36,6 +36,9 @@ a.unstyled_link {
 #logo {
 	margin: 0;
 	margin-bottom: 15px;
+	float: left;
+	vertical-align: middle;
+	height: 200px;
 }
 
 h2 {
@@ -45,9 +48,10 @@ h2 {
 }
 
 header {
-	text-align: center;
+	text-align: left;
 	margin-top: 30px;
 	margin-bottom: 30px;
+	overflow: hidden;
 }
 
 #place_and_time {
@@ -92,18 +96,22 @@ header {
 }
 
 #top_menu {
+	float: right;
 	font-size: 15pt;
+	margin-top: 75px;
 }
 
 #top_menu ul {
 	padding: 0;
 	margin: 0;
+	vertical-align: middle;
 }
 
 #top_menu li {
 	display: inline;
+	vertical-align: middle;
 	list-style-type: none;
-	padding-right: 30px;
+	padding-left: 30px;
 }
 
 
