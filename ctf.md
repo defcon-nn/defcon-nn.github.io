@@ -44,3 +44,17 @@ permalink: /ctf.html
 
 ## У меня остались вопросы, кому я могу их задать?
 Вопросы по организации, а также свои предложения и пожелания отправлять на [ctf.defconnn@gmail.com](mailto:ctf.defconnn@gmail.com)
+
+{% for speaker in site.data.meetup_12_02_2017[6].speaker %}
+<div class="speaker speaker-full">
+	<div class="speaker-avatar">
+		<img src="{{ "/images/avatars/" | append: speaker.avatar | prepend: site.baseurl }}" alt="{{ talk.speaker.name }}">
+	</div>
+	<div class="speaker-name">
+		{{ speaker.name }}{% if speaker.company %}, {{ speaker.company }}{% endif %}
+	</div>
+	<div class="speaker-bio">
+		<br/>{{ speaker.bio }}
+	</div>
+</div>
+{% endfor %}

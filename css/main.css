@@ -149,11 +149,6 @@ hr {
 	margin-right: 15px;
 }
 
-.speaker {
-	display: block;
-	margin-bottom: 10px;
-}
-
 #talks li .speaker > div  {
 	display: inline-block;
 	vertical-align: middle;
@@ -162,6 +157,11 @@ hr {
 
 #talks li > div:nth-child-last(1) {
 	margin-right: 0px;
+}
+
+.speaker {
+	display: block;
+	margin-bottom: 10px;
 }
 
 .speaker-avatar {
@@ -176,6 +176,30 @@ hr {
 
 .speaker-name {
 	width: 175px;
+}
+
+.speaker-full {
+	border-top: 1px solid #eaeaea;
+	margin-top: 25px;
+	padding-top: 25px;
+	overflow: hidden;
+}
+
+.speaker-full .speaker-avatar {
+	float: left;
+	margin-right: 25px;
+}
+
+.speaker-full .speaker-name, .speaker-full .speaker-company, .speaker-full .speaker-bio {
+	display: inline;
+}
+
+.speaker-full .speaker-name {
+	padding-bottom: 8px;
+	display: inline-block;
+	font-style: normal;
+	font-weight: bold;
+	width: auto;
 }
 
 #talks li .time {
@@ -201,6 +225,12 @@ hr {
 	color: #587b14;
 }
 
+#contacts {
+	clear: both;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
 #contact_list {
 	margin: 0;
 	margin-bottom: 15px;
@@ -210,7 +240,7 @@ hr {
 	margin-top: 15px;
 	list-style-type: none;
 	display: inline-block;
-	margin-right: 35px;
+	margin-right: 25px;
 }
 
 .inline_icon {
@@ -219,6 +249,7 @@ hr {
 	margin-right: 5px;
 	height: 24px;
 	width: 24px;
+	text-indent: -9999px;
 }
 
 #introduction {

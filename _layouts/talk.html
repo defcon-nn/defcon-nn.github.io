@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% assign talk = site.data[page.meetup][page.speaker] %}
+
+<h1>{{ talk.title }}</h1>
+
+{{ talk.description }}
+
+{{ content }}
+
+{% for speaker in talk.speaker %}
+{% include speaker-full.html %}
+{% endfor %}

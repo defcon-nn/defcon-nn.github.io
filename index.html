@@ -36,7 +36,7 @@ layout: default
 				{% if talk.description %}
 				{{ talk.description }}<br/>
 				{% endif %}
-				<a href="/meetups/0x01/{{ talk.page }}">Подробнее&nbsp;></a>
+				<a href="{{ talk.page | prepend: site.baseurl }}">Подробнее&nbsp;></a>
 			</div>			
 		</li>
 		{% endfor %}
