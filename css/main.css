@@ -226,6 +226,7 @@ hr {
 }
 
 #contacts {
+	text-align: center;
 	clear: both;
 	margin-top: 50px;
 	overflow: hidden;
@@ -272,15 +273,25 @@ hr {
 	background-image: url(../images/contact_icons/vk.png);
 }
 
-.logos {
-	float: right;
-	padding: 0;
-	margin: 0 auto;
+.supporters {
 	text-align: center;
+	font-style: italic;
+	padding: 25px 0px;
+}
+
+.supporters > p {
+	margin: 25px 0px;
+}
+
+.logos {
+	padding: 0;
+	margin: 15px auto;
 }
 
 .logos li {
 	display: inline-block;
+	vertical-align: middle;
+	margin-right: 50px;
 }
 
 .logos a {
@@ -288,6 +299,5 @@ hr {
 }
 
 .logos li:last-of-type {
-	border-right: 0;
 	margin-right: 0;
 }
