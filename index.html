@@ -7,12 +7,12 @@ layout: default
 </div>
 
 <div id="events_table">
-	<h2>Встреча 0x01 в воскресенье, 12 февраля. Программа</h2>
+	<h2>Встреча 0x02 в воскресенье, 2 апреля. Программа</h2>
 
-	<p>Наша первая встреча пройдет в формате небольшой конференции в нижегородском офисе Яндекса. Участие бесплатное, но количество мест ограничено — необходимо <a href="https://events.yandex.ru/events/yagosti/12-02-2017/register/">подать заявку.</a></p>
+	<p>Наша вторая встреча будет целиком посвящена соревнованию Capture The Flag и пройдет в офисе компании MERA.</a></p>
 
 	<ul id="talks">
-		{% for talk in site.data.meetup_12_02_2017 %}
+		{% for talk in site.data.ctf_02_04_2017 %}
 		<li{% if talk.css_class %} class="{{ talk.css_class }}"{% endif %}>
 			<div class="speakers">
 				{% for speaker in talk.speaker %}
@@ -43,24 +43,40 @@ layout: default
 	</ul>
 	<div id="directions">
 		<h2>Как добраться</h2>
-		<p>Мероприятие пройдет по адресу: г. Нижний Новгород, ул. Алексеевская, 10/16. Бизнес-центр Лобачевский Плаза, офис Яндекса, 3 этаж. Схема проезда есть в <a href="https://events.yandex.ru/events/yagosti/12-02-2017"/>анонсе Яндекса</a>.</p>
+		<p>Мероприятие пройдет по адресу: г. Нижний Новгород, <a href="https://yandex.ru/maps/-/C6APyQKF">ул. Родионова, 192, к.1</a>.</p>
 	</div>
 	<div class="supporters">
-		<p>Материалы и помощь в организации</p>
-		<ul class="logos">
-			<li><a href="https://cadrspace.ru"><img alt="CADR" src="{{ "/images/logos/cadrspace.svg" | prepend: site.baseurl }}" height="90" /></a></li>
-			<li><a href="http://paranoid-security.com"><img alt="Paranoid Security" src="{{ "/images/logos/paranoid.svg" | prepend: site.baseurl }}" height="90" /></a></li>
-			<li><a href="https://maidsafe.net"><img alt="MaidSafe" src="{{ "/images/logos/maidsafe.svg" | prepend: site.baseurl }}" height="50" /></a></li>
-		</ul>
+		<table style="width: 75%; margin: 0 auto">
+			<tr>
+				<td style="width: 50%; text-align: center">
+					<p>Материалы и помощь в организации</p>
+					<ul class="logos">
+						<li><a href="https://cadrspace.ru"><img alt="CADR" src="{{ "/images/logos/cadrspace.svg" | prepend: site.baseurl }}" height="90" /></a></li>
+						<li><a href="http://paranoid-security.com"><img alt="Paranoid Security" src="{{ "/images/logos/paranoid.svg" | prepend: site.baseurl }}" height="90" /></a></li>
+					</ul>
+				</td>
+				<td style="width: 50%; text-align: center">
+					<p>Помещение</p>
+					<ul class="logos">
+						<li><a href="https://mera.ru"><img alt="MERA" src="{{ "/images/logos/mera.jpg" | prepend: site.baseurl }}" height="55" /></a></li>
+					</ul>
 
-		<p>Помещение и информационная поддержка</p>
-		<ul class="logos">
-			<li><a href="https://yandex.ru"><img alt="Яндекс" src="{{ "/images/logos/yandex.svg" | prepend: site.baseurl }}" height="55" /></a></li>
-		</ul>
-
-		<p>Информационная поддержка</p>
-		<ul class="logos">
-			<li><a href="https://it52.info"><img alt="IT52" src="{{ "/images/logos/it52.jpg" | prepend: site.baseurl }}" height="100" /></a></li>
-		</ul>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 50%; text-align: center">
+					<p>Спонсоры призовых мест</p>
+					<ul class="logos">
+						<li><a href="https://xakep.ru"><img alt="Журнал ][акер" src="{{ "/images/logos/xakep.png" | prepend: site.baseurl }}" height="100" /></a></li>
+					</ul>
+				</td>
+				<td style="width: 50%; text-align: center">
+					<p>Информационная поддержка</p>
+					<ul class="logos">
+						<li><a href="https://it52.info"><img alt="IT52" src="{{ "/images/logos/it52.jpg" | prepend: site.baseurl }}" height="100" /></a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
 	</div>
 </div>
