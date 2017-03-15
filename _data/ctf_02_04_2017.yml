@@ -1,0 +1,14 @@
+- title: "DefconNN CTF Starter"
+  speaker:
+    - name: Максим Лебедев
+      avatar: maksim.jpg
+      bio: SW Developer, увлекается информационной безопасностью. С 2016 года состоит в CTF команде Invulnerable.
+    - name: Илья Ленин
+      avatar: ilya.jpg
+      company: хакерспейс CADR
+      bio: Системный администратор. Интересуется безопасностью беспроводных сетей. Явный сторонник биохакинга и киборгизации человека. Администратор Нижегородского хакерспейса CADR.
+  company: Нижний Новгород
+  time: "12:00 — 20:00"
+  description: 
+  page: /ctf.html
+
