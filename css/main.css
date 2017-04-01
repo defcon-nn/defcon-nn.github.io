@@ -293,6 +293,8 @@ hr {
 	vertical-align: middle;
 	margin-right: 50px;
 	font-style: normal;
+	font-size: 12pt;
+	line-height: 25pt;
 }
 
 .logos a {
