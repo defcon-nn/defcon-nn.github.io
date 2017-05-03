@@ -7,14 +7,12 @@ layout: default
 </div>
 
 <div id="events_table">
-	<h2>Встреча 0x02 в воскресенье, 2 апреля</h2>
+	<h2>Встреча 0x03 в воскресенье, 14 мая</h2>
 
-	<p>Наша вторая встреча будет целиком посвящена соревнованию Capture The Flag и пройдет на территории НИИТ (помещение и оборудование предоставлено компанией <a href="http://mera.ru">MERA</a>).</a></p>
-
-	<p><strong><a href="https://ctf.defcon-nn.ru">Зарегистрироваться</a></strong></p>
+	<p>Наша третья встреча пройдет на площадке НИИТ в формате мини-конференции с докладами на тему информационной безопасности. Помещение и оборудование снова предоставлено компанией <a href="http://mera.ru">MERA</a>.</a></p>
 
 	<ul id="talks">
-		{% for talk in site.data.ctf_02_04_2017 %}
+		{% for talk in site.data.meetup_14_05_2017 %}
 		<li{% if talk.css_class %} class="{{ talk.css_class }}"{% endif %}>
 			<div class="speakers">
 				{% for speaker in talk.speaker %}
@@ -50,6 +48,9 @@ layout: default
 	<h2>Архив</h2>
 	<ul>
 		<li>
+			<a href="{{ "/0x02/" | prepend: site.baseurl }}">Встреча 0x02 в воскресенье, 2 апреля</a>
+		</li>
+		<li>
 			<a href="{{ "/0x01/" | prepend: site.baseurl }}">Встреча 0x01 в воскресенье, 12 февраля</a>
 		</li>
 	</ul>
@@ -72,20 +73,7 @@ layout: default
 				</td>
 			</tr>
 			<tr>
-				<td style="width: 50%; text-align: center">
-					<p>Спонсоры призовых мест</p>
-					<ul class="logos">
-						<li>
-							<a href="https://xakep.ru"><img alt="Журнал ][акер" src="{{ "/images/logos/xakep.png" | prepend: site.baseurl }}" height="40" /></a>
-							<br>Журнал «Хакер»
-						</li>
-						<li>
-							<a href="https://www.xeovo.com"><img alt="Хостинг Xeovo" src="{{ "/images/logos/xeovo.jpg" | prepend: site.baseurl }}" height="37" /></a>
-							<br>Хостинг Xeovo
-						</li>
-					</ul>
-				</td>
-				<td style="width: 50%; text-align: center">
+				<td colspan="2" style="width: 100%; text-align: center">
 					<p>Информационная поддержка</p>
 					<ul class="logos">
 						<li><a href="https://it52.info"><img alt="IT52" src="{{ "/images/logos/it52.jpg" | prepend: site.baseurl }}" height="80" /></a></li>

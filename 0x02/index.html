@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<div id="events_table">
+	<h2>Встреча 0x02 в воскресенье, 2 апреля</h2>
+
+	<p>Наша вторая встреча была целиком посвящена соревнованию Capture The Flag и прошла на территории НИИТ (помещение и оборудование предоставлено компанией <a href="http://mera.ru">MERA</a>).</a></p>
+
+	<ul id="talks">
+		{% for talk in site.data.ctf_02_04_2017 %}
+		<li{% if talk.css_class %} class="{{ talk.css_class }}"{% endif %}>
+			<div class="speakers">
+				{% for speaker in talk.speaker %}
+				<div class="speaker">
+					<div class="speaker-avatar">
+						<img src="{{ "/images/avatars/" | append: speaker.avatar | prepend: site.baseurl }}" alt="Фотография">
+					</div>
+					<div class="speaker-name">
+						<strong>{{ speaker.name }}</strong>
+						<br>
+						{{ speaker.company }}
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="time">
+				{{ talk.time }}
+			</div>
+			<div class="about_talk">
+				<strong>{{ talk.title }}</strong><br/>
+				{% if talk.description %}
+				{{ talk.description }}<br/>
+				{% endif %}
+				<a href="{{ talk.page | prepend: site.baseurl }}">Подробнее&nbsp;></a>
+			</div>			
+		</li>
+		{% endfor %}
+	</ul>
+	<div class="supporters">
+		<table style="width: 75%; margin: 0 auto">
+			<tr>
+				<td style="width: 50%; text-align: center">
+					<p>Материалы и помощь в организации</p>
+					<ul class="logos">
+						<li><a href="https://cadrspace.ru"><img alt="CADR" src="{{ "/images/logos/cadrspace.svg" | prepend: site.baseurl }}" height="90" /></a></li>
+						<li><a href="http://paranoid-security.com"><img alt="Paranoid Security" src="{{ "/images/logos/paranoid.svg" | prepend: site.baseurl }}" height="90" /></a></li>
+					</ul>
+				</td>
+				<td style="width: 50%; text-align: center">
+					<p>Помещение</p>
+					<ul class="logos">
+						<li><a href="http://mera.ru"><img alt="MERA" src="{{ "/images/logos/mera.jpg" | prepend: site.baseurl }}" height="55" /></a></li>
+					</ul>
+
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 50%; text-align: center">
+					<p>Спонсоры призовых мест</p>
+					<ul class="logos">
+						<li>
+							<a href="https://xakep.ru"><img alt="Журнал ][акер" src="{{ "/images/logos/xakep.png" | prepend: site.baseurl }}" height="40" /></a>
+							<br>Журнал «Хакер»
+						</li>
+						<li>
+							<a href="https://www.xeovo.com"><img alt="Хостинг Xeovo" src="{{ "/images/logos/xeovo.jpg" | prepend: site.baseurl }}" height="37" /></a>
+							<br>Хостинг Xeovo
+						</li>
+					</ul>
+				</td>
+				<td style="width: 50%; text-align: center">
+					<p>Информационная поддержка</p>
+					<ul class="logos">
+						<li><a href="https://it52.info"><img alt="IT52" src="{{ "/images/logos/it52.jpg" | prepend: site.baseurl }}" height="80" /></a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
