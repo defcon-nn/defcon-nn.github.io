@@ -4,6 +4,12 @@ meetup: meetup_14_05_2017
 speaker: 0
 ---
 
+## Слайды
+
+[Скачать PDF](./sdr.pdf)
+
+<script async class="speakerdeck-embed" data-id="14766b5c06394914ac3e024c613b12f7" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
 - Введениие: что есть SDR, и почему его время настало.
   Краткая история перехода от аналоговых радиосистем к цифровым программным.
 
