@@ -11,3 +11,5 @@ permalink: /projects.html
 *Проект создан с целью собрать в виде списков информацию по разным темам, связанные с интересами сообщества Defcon-NN.*
 
 Ссылка еа мето обитания: [https://github.com/defcon-nn/Informative-lists](https://github.com/defcon-nn/Informative-lists)
+
+**2. **
