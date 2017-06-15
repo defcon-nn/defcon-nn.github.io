@@ -8,8 +8,8 @@ permalink: /projects.html
 
 **1. Проект "Списки"**
 
-*Проект создан с целью собрать в виде списков информацию по разным темам, связанные с интересами сообщества Defcon-NN.*
+*Проект создан с целью собрать в виде списков информацию по разным темам, связанных с интересами сообщества Defcon-NN.*
 
-Ссылка еа мето обитания: [https://github.com/defcon-nn/Informative-lists](https://github.com/defcon-nn/Informative-lists)
+Ссылка на место обитания: [https://github.com/defcon-nn/Informative-lists](https://github.com/defcon-nn/Informative-lists)
 
 **2. **
