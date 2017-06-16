@@ -274,9 +274,21 @@ hr {
 }
 
 .supporters {
-	text-align: center;
+	text-align: left;
 	font-style: italic;
 	padding: 25px 0px;
+	font-size: 12pt;
+	color: #757575;
+}
+
+.supporters a {
+	color: #757575;
+	border-bottom: 1px solid #909090;
+}
+
+.supporters a:hover {
+	color: #175c91;
+	border-bottom: 1px solid #94c8ef;
 }
 
 .supporters > p {
