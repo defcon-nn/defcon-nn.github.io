@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div id="events_table">
+	<h2>Встреча 0x03 в воскресенье, 14 мая</h2>
+
+	<p>Наша третья встреча прошла на площадке НИИТ в формате мини-конференции с докладами про программное радио (SDR), ботнеты, и безопасную сервисно-ориентированную архитектуру в IoT.</p>
+
+	<p>Список докладов и материалов к ним:</p>
+
+	<ul id="talks">
+		{% for talk in site.data.meetup_14_05_2017 %}
+		<li{% if talk.css_class %} class="{{ talk.css_class }}"{% endif %}>
+			<div class="speakers">
+				{% for speaker in talk.speaker %}
+				<div class="speaker">
+					<div class="speaker-avatar">
+						<img src="{{ "/images/avatars/" | append: speaker.avatar | prepend: site.baseurl }}" alt="Фотография">
+					</div>
+					<div class="speaker-name">
+						<strong>{{ speaker.name }}</strong>
+						<br>
+						{{ speaker.company }}
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="time">
+				{{ talk.time }}
+			</div>
+			<div class="about_talk">
+				<strong>{{ talk.title }}</strong><br/>
+				{% if talk.description %}
+				{{ talk.description }}<br/>
+				{% endif %}
+				<a href="{{ talk.page | prepend: site.baseurl }}">Подробнее&nbsp;></a>
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+	<div class="supporters">
+		Выражаем благодарность за помощь в организации хакерспейсу <a href="https://cadrspace.ru">CADR</a> и компании <a href="http://mera.ru">MERA</a> за предоставленное помещение. Информационную поддержку оказывало сообщество <a href="https://it52.info">IT52</a>.
+	</div>
+</div>

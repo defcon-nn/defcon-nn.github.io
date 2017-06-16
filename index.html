@@ -8,18 +8,16 @@ layout: default
 </div>
 
 <div id="events_table">
-	<h2>Встреча 0x03 в воскресенье, 14 мая</h2>
+	<h2>Встреча 0x04 в субботу, 8 июля</h2>
 
-	<p>Наша третья встреча пройдет на площадке НИИТ в формате мини-конференции с докладами про программное радио (SDR), ботнеты, и безопасную сервисно-ориентированную архитектуру в IoT. Помещение и оборудование снова предоставлено компанией <a href="http://mera.ru">MERA</a>.</a></p>
-
-	<strong><a href="https://goo.gl/forms/fOJYQkUvZyb3mpc42">Регистрация</a></strong>
-
-	<hr />
+	<p>Наша четвертая встреча снова пройдет в формате мини-конференции. Поговорим о BitCoin и других криптовалютах, о том, почему случайные числа не всегда могут быть случайными, и об обратной разработке с использованием программы Radare2.</p>
 
 	<h2>Программа</h2>
 
+	<p>Программа уточняется.</p>
+
 	<ul id="talks">
-		{% for talk in site.data.meetup_14_05_2017 %}
+		{% for talk in site.data.meetup_08_07_2017 %}
 		<li{% if talk.css_class %} class="{{ talk.css_class }}"{% endif %}>
 			<div class="speakers">
 				{% for speaker in talk.speaker %}
@@ -44,16 +42,19 @@ layout: default
 				{{ talk.description }}<br/>
 				{% endif %}
 				<a href="{{ talk.page | prepend: site.baseurl }}">Подробнее&nbsp;></a>
-			</div>			
+			</div>
 		</li>
 		{% endfor %}
 	</ul>
 	<div id="directions">
 		<h2>Как добраться</h2>
-		<p>Мероприятие пройдет по адресу: г. Нижний Новгород, <a href="https://yandex.ru/maps/-/C6APyQKF">ул. Родионова, 192, к.1</a>, аудитория 509 (5-й этаж).</p>
+		<p>Место проведения уточняется.</p>
 	</div>
 	<h2>Архив</h2>
 	<ul>
+		<li>
+			<a href="{{ "/0x03/" | prepend: site.baseurl }}">Встреча 0x03 в воскресенье, 14 мая</a>
+		</li>
 		<li>
 			<a href="{{ "/0x02/" | prepend: site.baseurl }}">Встреча 0x02 в воскресенье, 2 апреля</a>
 		</li>
@@ -61,7 +62,4 @@ layout: default
 			<a href="{{ "/0x01/" | prepend: site.baseurl }}">Встреча 0x01 в воскресенье, 12 февраля</a>
 		</li>
 	</ul>
-	<div class="supporters">
-		Выражаем благодарность за помощь в организации хакерспейсу <a href="https://cadrspace.ru">CADR</a> и компании <a href="http://mera.ru">MERA</a> за предоставленное помещение. Информационную поддержку оказывало сообщество <a href="https://it52.info">IT52</a>.
-	</div>
 </div>
