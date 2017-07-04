@@ -1,7 +1,7 @@
 ---
 layout: talk
 meetup: meetup_08_07_2017
-speaker: 2
+speaker: 1
 ---
 
 ## Слайды
