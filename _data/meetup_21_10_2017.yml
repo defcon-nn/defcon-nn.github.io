@@ -1,0 +1,27 @@
+- title: "Безопасность C-кода"
+  speaker: [sobinov]
+  time: "13:00"
+  description:
+  page: /0x06/c-security.html
+
+- title: "Атаки на Wi-Fi"
+  speaker: [gordias]
+  time: "14:00"
+  description: 
+  page: /0x06/wi-fi.html
+
+- title: "Введение в реверсинг Андроид-прошивок"
+  speaker: [wire_snark]
+  time: "16:00"
+  description: 
+  page: /0x06/android-reverse.html
+
+- title: "Bash linter на Lisp"
+  speaker:
+    - name: Михаил А.
+      company:
+      avatar: anon.png
+      bio:
+  time: "16:45"
+  description:
+  page: /0x06/linter.html

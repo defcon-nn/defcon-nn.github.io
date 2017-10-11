@@ -10,6 +10,14 @@ layout: default
 
 {{ content }}
 
-{% for speaker in talk.speaker %}
-{% include speaker-full.html %}
+{% for speaker_id in talk.speaker %}
+  {% comment %}
+    Если спикер не найден в базе, то используем данные как есть
+  {% endcomment %}
+  {% if site.data.speakers[speaker_id] %}
+    {% assign speaker = site.data.speakers[speaker_id] %}
+  {% else %}
+    {% assign speaker = speaker_id %}
+  {% endif %}
+  {% include speaker-full.html speaker=speaker %}
 {% endfor %}

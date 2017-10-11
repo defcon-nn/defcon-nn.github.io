@@ -1,0 +1,38 @@
+<li{% if talk.css_class %} class="{{ talk.css_class }}"{% endif %}>
+	<div class="speakers">
+		{% for speaker_id in talk.speaker %}
+		{% comment %}
+		  Если спикер не найден в базе, то используем данные как есть
+		{% endcomment %}
+		{% if site.data.speakers[speaker_id] %}
+		  {% assign speaker = site.data.speakers[speaker_id] %}
+		{% else %}
+		  {% assign speaker = speaker_id %}
+		{% endif %}
+		<div class="speaker">
+			<div class="speaker-avatar">
+				{% if speaker.avatar %}
+				  <img src="{{ "/images/avatars/" | append: speaker.avatar | prepend: site.baseurl }}" alt="{{ speaker.name }}">
+				{% else %}
+				  <img src="/images/avatars/anon.png" alt="{{ speaker.name }}">
+				{% endif %}
+			</div>
+			<div class="speaker-name">
+				<strong>{{ speaker.name }}</strong>
+				<br>
+				{{ speaker.company }}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="time">
+		{{ talk.time }}
+	</div>
+	<div class="about_talk">
+		<strong>{{ talk.title }}</strong><br/>
+		{% if talk.description %}
+		{{ talk.description }}<br/>
+		{% endif %}
+		<a href="{{ talk.page | prepend: site.baseurl }}">Подробнее&nbsp;></a>
+	</div>			
+</li>

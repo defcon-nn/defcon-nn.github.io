@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div id="speakers_table">
+	<h2>Докладчики</h2>
+
+	<p>Здесь перечислены все люди, которые когда-либо выступали на наших встречах.</p>
+
+	<ul id="speakers">
+		{% for speaker_data in site.data.speakers %}
+		{% assign speaker = speaker_data[1] %}
+		{% include speaker-full.html %}
+		{% endfor %}
+	</ul>
+</div>

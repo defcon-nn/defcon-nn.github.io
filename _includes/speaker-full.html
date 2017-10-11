@@ -1,9 +1,13 @@
 <div class="speaker speaker-full">
 	<div class="speaker-avatar">
-		<img src="{{ "/images/avatars/" | append: speaker.avatar | prepend: site.baseurl }}" alt="{{ talk.speaker.name }}">
+		{% if speaker.avatar %}
+		  <img src="{{ "/images/avatars/" | append: speaker.avatar | prepend: site.baseurl }}" alt="{{ speaker.name }}">
+		{% else %}
+		  <img src="/images/avatars/anon.png" alt="{{ speaker.name }}">
+		{% endif %}
 	</div>
 	<div class="speaker-name">
-		{{ speaker.name }}, {{ speaker.company }}
+		<strong>{{ speaker.name }}</strong>{% if speaker.company %}, {{ speaker.company }}{% endif %}
 	</div>
 	<div class="speaker-bio">
 		<br/>{{ speaker.bio }}

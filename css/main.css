@@ -27,6 +27,16 @@ a {
 	border-bottom: 1px solid #94c8ef;
 }
 
+a:hover {
+	color: #357FB8;
+	border-bottom-color: 1px solid #AFDAFA;
+}
+
+a:visited {
+	color: #B135B8;
+	border-bottom-color: #F0C7F2;
+}
+
 a.unstyled_link {
 	text-decoration: none;
 	border-bottom: none;
@@ -111,7 +121,7 @@ header {
 	display: inline;
 	vertical-align: middle;
 	list-style-type: none;
-	padding-left: 30px;
+	padding-left: 15px;
 }
 
 
@@ -188,6 +198,7 @@ hr {
 .speaker-full .speaker-avatar {
 	float: left;
 	margin-right: 25px;
+	margin-bottom: 15px;
 }
 
 .speaker-full .speaker-name, .speaker-full .speaker-company, .speaker-full .speaker-bio {

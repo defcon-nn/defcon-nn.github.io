@@ -3,61 +3,32 @@ layout: default
 ---
 
 <div id="introduction">
-	<p><strong>DEF CON Нижний Новгород</strong> — сообщество, объединяющее людей, интересующихся изучением и необычным применением современных технологий, часто в направлении информационной безопасности — то есть всем, что понимается в широком положительном смысле слова «хакинг». Основанное в духе <a href="https://defcongroups.org/dcgfaq.html">группы DEF CON</a>, сообщество открыто для всех, кто желает учиться новому, помогать развиваться другим и просто общаться с людьми с такой же культурой.</p>
+	<p><strong>DC7831 / DEF CON Нижний Новгород</strong> — сообщество, объединяющее людей, интересующихся изучением и необычным применением современных технологий, часто в направлении информационной безопасности — то есть всем, что понимается в широком положительном смысле слова «хакинг». Основанное в духе <a href="https://defcongroups.org/dcgfaq.html">группы DEF CON</a>, сообщество открыто для всех, кто желает учиться новому, помогать развиваться другим и просто общаться с людьми с такой же культурой. Хотите о чем-нибудь рассказать? <a href="/cfp.html">Пишите нам</a>!</p>
 	<p>Наш сайт доступен в виде скрытого сервиса сети Тор: <a href="http://cn7v542gbwwtblca.onion">cn7v542gbwwtblca.onion</a>.</p>
 </div>
 
 <div id="events_table">
-	<h2>Встреча 0x04 в субботу, 8 июля</h2>
+	<h2>Встреча 0x06 в субботу, 21 октября</h2>
 
-	<p>Наша четвертая встреча снова пройдет в формате мини-конференции в конференц-зале «RED» <a href="https://yandex.ru/maps/-/CBQ7Y2x2hD">отеля IBIS</a>. Поговорим о BitCoin и других криптовалютах, о том, почему не стоит доверять свои данные Андроид-телефонам, почему случайные числа не всегда могут быть случайными, и о сценариях атак на протокол TLS. Начало в 15:00.</p>
+	<p>Наша шестая встреча пройдет в формате мини-конференции в <a href="https://yandex.ru/maps/-/C6APyQKF">НИИТе</a>. Поговорим об уязвимостях программ написанных на C, про атаки на Wi-Fi, о реверс-инжиниринге прошивок Android, и о том, как проверять Bash-скрипты на ошибки. Начало в 13:00.</p>
 
 	<h2>Программа</h2>
 
 	<ul id="talks">
-		{% for talk in site.data.meetup_08_07_2017 %}
-		<li{% if talk.css_class %} class="{{ talk.css_class }}"{% endif %}>
-			<div class="speakers">
-				{% for speaker in talk.speaker %}
-				<div class="speaker">
-					<div class="speaker-avatar">
-						<img src="{{ "/images/avatars/" | append: speaker.avatar | prepend: site.baseurl }}" alt="Фотография">
-					</div>
-					<div class="speaker-name">
-						<strong>{{ speaker.name }}</strong>
-						<br>
-						{{ speaker.company }}
-					</div>
-				</div>
-				{% endfor %}
-			</div>
-			<div class="time">
-				{{ talk.time }}
-			</div>
-			<div class="about_talk">
-				<strong>{{ talk.title }}</strong><br/>
-				{% if talk.description %}
-				{{ talk.description }}<br/>
-				{% endif %}
-				<a href="{{ talk.page | prepend: site.baseurl }}">Подробнее&nbsp;></a>
-			</div>
-		</li>
+		{% for talk in site.data.meetup_21_10_2017 %}
+		{% include talk.html %}
 		{% endfor %}
 	</ul>
 	<div id="directions">
 		<h2>Как добраться</h2>
-		<p>Наша встреча пройдет <a href="https://yandex.ru/maps/-/CBQ7Y2x2hD">в отеле IBIS</a> на ул. Максима Горького, д.115 (станция метро "Горьковская").</p>
+		<p>Наша встреча пройдет по адресу: г. Нижний Новгород, <a href="https://yandex.ru/maps/-/C6APyQKF">ул. Родионова, 192, к.1</a>, аудитория 509 (5-й этаж).</p>
 	</div>
 	<h2>Архив</h2>
 	<ul>
-		<li>
-			<a href="{{ "/0x03/" | prepend: site.baseurl }}">Встреча 0x03 в воскресенье, 14 мая</a>
-		</li>
-		<li>
-			<a href="{{ "/0x02/" | prepend: site.baseurl }}">Встреча 0x02 в воскресенье, 2 апреля</a>
-		</li>
-		<li>
-			<a href="{{ "/0x01/" | prepend: site.baseurl }}">Встреча 0x01 в воскресенье, 12 февраля</a>
-		</li>
+		<li><a href="{{ "/0x05/" | prepend: site.baseurl }}">Баркэмп 0x05 в пятницу, 15 сентября</a></li>
+		<li><a href="{{ "/0x04/" | prepend: site.baseurl }}">Встреча 0x04 в субботу, 8 июля</a></li>
+		<li><a href="{{ "/0x03/" | prepend: site.baseurl }}">Встреча 0x03 в воскресенье, 14 мая</a></li>
+		<li><a href="{{ "/0x02/" | prepend: site.baseurl }}">Встреча 0x02 в воскресенье, 2 апреля</a></li>
+		<li><a href="{{ "/0x01/" | prepend: site.baseurl }}">Встреча 0x01 в воскресенье, 12 февраля</a></li>
 	</ul>
 </div>
