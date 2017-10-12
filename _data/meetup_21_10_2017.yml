@@ -17,11 +17,7 @@
   page: /0x06/android-reverse.html
 
 - title: "Bash linter на Lisp"
-  speaker:
-    - name: Михаил А.
-      company:
-      avatar: anon.png
-      bio:
+  speaker: [mikhail]
   time: "16:45"
-  description:
+  description: "В докладе мы рассмотрим создание приложения для проверки скриптов Bash на устаревшие конструкции, позволяя пользователю писать качественный и безопасный код."
   page: /0x06/linter.html
