@@ -327,3 +327,27 @@ hr {
 .logos li:last-of-type {
 	margin-right: 0;
 }
+
+#zeronights {
+	margin: 10px 0px;
+	padding: 20px 25px;
+	border: 1px solid #eaeaea;
+	border-radius: 15px;
+	overflow: hidden;
+	font-size: 12pt;
+}
+
+#zeronights img {
+	float: left;
+	margin-right: 25px;
+	width: 125px;
+	border: none;
+}
+
+#zeronights p {
+	margin: 0;
+}
+
+#zeronights h4 {
+	margin: 0 0 10px 0;
+}
