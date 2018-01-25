@@ -1,3 +1,8 @@
+3APA3A:
+  name: Владимир Дубровин aka 3APA3A
+  company: Mail.Ru, Нижний Новгород
+  avatar: 3apa3a.jpg
+  bio: Никогда не занимался безопасностью, но постоянно в нее попадает. Создатель security.nnov.ru / securityvulns.ru, автор 3proxy.
 avp:
   name: Артём Попцов
   company: Нижегородский радиотехнический колледж, Хакерспейс CADR, Нижний Новгород
@@ -36,6 +41,9 @@ ilya:
   avatar: ilya.jpg
   company: хакерспейс CADR
   bio: Системный администратор. Интересуется безопасностью беспроводных сетей. Явный сторонник биохакинга и киборгизации человека. Администратор Нижегородского хакерспейса CADR.
+ilya_s:
+  name: Илья Шапошников
+  company: RedTeam Ростелеком, Москва
 kirill:
   name: Кирилл Шипулин
   company: Positive Technologies, Нижний Новгород
@@ -53,6 +61,13 @@ nikita:
   company: MaidSafe, Нижний Новгород
   avatar: nikita.png
   bio: Сторонник и адвокат открытых технологий, интересуется языком Rust и вопросами системной безопасности. Занимается разработкой открытого проекта P2P-сети в компании MaidSafe.net (Шотландия).
+olga:
+  name: Ольга Карелова
+  company: Преподаватель НИЯУ МИФИ кафедры «криптологии и кибербезопасности».
+  bio: Капитан команды rm -rf ННГУ им. Н.И. Лобачевского. 2014-2016 организатор M*CTF.
+peter_destructive:
+  name: Peter Destructive
+  company: it sec pro course, Ростелеком, Москва
 shaposhnikov:
   name: Илья Шапошников
   company: Compliance Control
