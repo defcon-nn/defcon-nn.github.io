@@ -1,5 +1,5 @@
 ---
 layout: talk
-meetup: meetup_18_02_2018
+meetup: meetup_17_02_2018
 speaker: 1
 ---

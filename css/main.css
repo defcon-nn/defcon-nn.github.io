@@ -51,6 +51,12 @@ a.unstyled_link {
 	height: 200px;
 }
 
+h1 {
+	font-size: 20pt;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
 h2 {
 	font-size: 15pt;
 	margin-top: 30px;
