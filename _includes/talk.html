@@ -1,4 +1,15 @@
 <li{% if talk.css_class %} class="{{ talk.css_class }}"{% endif %}>
+	{% if talk.technical %}
+	<div class="time">
+		{{ talk.time }}
+	</div>
+	<div class="about_talk">
+		<strong>{{ talk.title }}</strong><br/>
+		{% if talk.description %}
+		{{ talk.description }}<br/>
+		{% endif %}
+	</div>
+	{% else %}
 	<div class="speakers">
 		{% for speaker_id in talk.speaker %}
 		{% comment %}
@@ -34,5 +45,6 @@
 		{{ talk.description }}<br/>
 		{% endif %}
 		<a href="{{ talk.page | prepend: site.baseurl }}">Подробнее&nbsp;></a>
-	</div>			
+	</div>
+	{% endif %}
 </li>
