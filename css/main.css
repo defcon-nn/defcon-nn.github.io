@@ -239,10 +239,6 @@ hr {
 	max-width: 400px;
 }
 
-#talks li.break .speakers {
-	display: none;
-}
-
 .speaker-name {
 	font-style: italic;
 }
