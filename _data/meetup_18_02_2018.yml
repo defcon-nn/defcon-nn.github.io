@@ -55,8 +55,3 @@
   time: "17:00"
   page: /0x08/pentest.html
 
-- title: Безопасность смарт-контрактов в Ethereum
-  speaker: nikita
-  time: "17:45"
-  page: /0x08/ethereum.html
-
