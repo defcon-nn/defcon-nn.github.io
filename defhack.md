@@ -47,18 +47,18 @@ permalink: /defhack.html
 
 ## Таблица результатов
 
-http://phd8.dc20e6.ru, обновляется примерно раз в 10 минут.
+[http://phd8.dc20e6.ru](http://phd8.dc20e6.ru), обновляется примерно раз в 10 минут.
 
 ## Об авторах
 
-Ведущие разработчики (платформа, квесты): swan'i @lebik, Ilya Lenin @LeninOne, AI OI @vlllo, Nikita Baksalyar @nbaksalyar, Wire Snark @wsnark
-DevOps: Alexey Extor @extor
-Разработчики: Egor Podmokov @podmokov, Vladimir Vlasov @HiVaccessdenied, Roman @deadroot, @Illey,
-Графика, изображения, стиль: Olga Sviridova @barsuchiha, Елена Л
-Тексты: Wire Snark @wsnark, @g0rd1as
-Автор сценария, руководитель: Wire Snark @wsnark
+* Ведущие разработчики (платформа, квесты): swan'i @lebik, Ilya Lenin @LeninOne, AI OI @vlllo, Nikita Baksalyar @nbaksalyar, Wire Snark @wsnark
+* DevOps: Alexey Extor @extor
+* Разработчики: Egor Podmokov @podmokov, Vladimir Vlasov @HiVaccessdenied, Roman @deadroot, @Illey
+* Графика, изображения, стиль: Olga Sviridova @barsuchiha, Елена Л
+* Тексты: Wire Snark @wsnark, @g0rd1as
+* Автор сценария, руководитель: Wire Snark @wsnark
 
-Благодарности: Artyom Poptsov @a_v_p, Руслан @gnurian
+* Благодарности: Artyom Poptsov @a_v_p, Руслан @gnurian
 
 Исходный код системы будет опубликован под открытыми лицензиями.
 
