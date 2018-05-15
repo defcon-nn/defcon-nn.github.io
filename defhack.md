@@ -30,7 +30,7 @@ permalink: /defhack.html
 - сайт yo-corp.ru*, wallet.yo-corp.ru
 - внутреннюю docker-инфраструктуру
 
-На сайте yo-corp.ru есть ровно одна игровая уязвимость, цель второго квеста.
+*На сайте yo-corp.ru есть ровно одна игровая уязвимость, цель второго квеста.
 
 Если вы видите какой-либо хост, похожий на инфраструктурный, но не уверены - не стесняйтесь, уточните в чате.
 
@@ -45,4 +45,20 @@ permalink: /defhack.html
 
 При необходимости можно писать организаторам лично: Wire Snark ([@wsnark](https://t.me/wsnark)).
 
+## Таблица результатов
+
+http://phd8.dc20e6.ru, обновляется примерно раз в 10 минут.
+
+## Об авторах
+
+Ведущие разработчики (платформа, квесты): swan'i @lebik, Ilya Lenin @LeninOne, AI OI @vlllo, Nikita Baksalyar @nbaksalyar, Wire Snark @wsnark
+DevOps: Alexey Extor @extor
+Разработчики: Egor Podmokov @podmokov, Vladimir Vlasov @HiVaccessdenied, Roman @deadroot, @Illey,
+Графика, изображения, стиль: Olga Sviridova @barsuchiha, Елена Л
+Тексты: Wire Snark @wsnark, @g0rd1as
+Автор сценария, руководитель: Wire Snark @wsnark
+
+Благодарности: Artyom Poptsov @a_v_p, Руслан @gnurian
+
+Исходный код системы будет опубликован под открытыми лицензиями.
 
