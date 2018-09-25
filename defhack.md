@@ -4,7 +4,7 @@ title: DefHack
 permalink: /defhack.html
 ---
 
-<div style="text-align: left"><img src="images/defhack/neoquest-logo.png" alt="NeoQUEST" style="height:80px;"/></div>
+<img src="images/defhack/neoquest-logo.png" alt="NeoQUEST" style="height:70px; float: right; margin-left: 5px;"/>
 
 # DefHack 2018.9: Виноградный Джо
 ### О том, как сисадмин Виноград оказался не таким уж неуловимым
