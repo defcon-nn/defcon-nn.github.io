@@ -4,10 +4,10 @@ title: DefHack
 permalink: /defhack.html
 ---
 
+<div style="text-align: left"><img src="images/defhack/neoquest-logo.png" alt="NeoQUEST" style="height:120px;"/></div>
+
 # DefHack 2018.9: Виноградный Джо
 ### О том, как сисадмин Виноград оказался не таким уж неуловимым
-
-<img src="images/defhack/neoquest-logo.png" alt="NeoQUEST" style="height:120px;"/>
 
 Приглашаем принять участие в нашем хакерском квесте DefHack на конференции NeoQUEST-2018! Он будет доступен онлайн с 26 сентября.
 
@@ -29,7 +29,8 @@ permalink: /defhack.html
 Составляя задания, мы старались приблизить их к реалистичным, потенциально возможным ситуациям. Большинство заданий, надеемся, полезны и для отработки базовых методов атаки, и понимания возможных методов защиты.
 
 DefHack 2018.9: Виноградный Джо является первым дополнением к оригинальному релизу DefHack 2018.5: Ход Слоном.
-<img src="images/defhack/defhack2018.5-bishops-move.jpg" alt="Ход Слоном" style="width:350px;"/>
+
+<div style="text-align: center"><img src="images/defhack/defhack2018.5-bishops-move.jpg" alt="Ход Слоном" style="width:350px;"/></div>
 
 ## Таблица результатов
 
