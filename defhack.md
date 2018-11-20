@@ -37,6 +37,12 @@ permalink: /defhack.html
 
 [http://top.defcon-nn.ru](http://top.defcon-nn.ru), обновляется раз в 30 секунд.
 
+# История
+
+DefHack 2018.9: Виноградный Джо. О том, как сисадмин Виноград оказался не таким уж неуловимым.
+<div style="text-align: center"><img src="images/defhack/defhack2018.9-grape-joe.png" alt="Виноградный Джо" style="width:350px; float: right; margin-left: 5px;"/></div>
+DefHack 2018.5: Ход Слоном. О том, как маленькая уязвимость приводит к большим последствиям.
+<div style="text-align: center"><img src="images/defhack/defhack2018.5-bishops-move.jpg" alt="Ход Слоном" style="width:350px;"/></div>
 
 ## О механике квеста
 
