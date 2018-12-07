@@ -83,7 +83,7 @@ DefHack 2018.5: Ход Слоном. О том, как маленькая уяз
 
 * Ведущие разработчики (платформа, квесты): swan'i [@lebik](https://t.me/lebik), Ilya Lenin [@LeninOne](https://t.me/LeninOne), AI OI [@vlllo](https://t.me/vlllo), Nikita Baksalyar [@nbaksalyar](https://t.me/nbaksalyar), Wire Snark [@wsnark](https://t.me/wsnark), Artyom Poptsov [@a_v_p](https://t.me/a_v_p)
 * DevOps: Alexey Extor [@extor](https://t.me/extor)
-* Разработчики: Roman [@deadroot](https://t.me/deadroot), Egor Podmokov [@podmokov](https://t.me/podmokov), Vladimir Vlasov [@HiVaccessdenied](https://t.me/HiVaccessdenied), [@Illey](https://t.me/Illey)
+* Разработчики: Roman [@deadroot](https://t.me/deadroot), Serj10 Wh1t3 [@Brutu33](https://t.me/Brutu33), Egor Podmokov [@podmokov](https://t.me/podmokov), Vladimir Vlasov [@HiVaccessdenied](https://t.me/HiVaccessdenied), [@Illey](https://t.me/Illey)
 * Графика, изображения, стиль: Olga Sviridova [@barsuchiha](https://t.me/barsuchiha), Елена Л
 * Тексты, сценарии: Wire Snark [@wsnark](https://t.me/wsnark), [@g0rd1as](https://t.me/g0rd1as), Artyom Poptsov [@a_v_p](https://t.me/a_v_p)
 * Руководитель: Wire Snark [@wsnark](https://t.me/wsnark)
@@ -98,4 +98,5 @@ DefHack 2018.5: Ход Слоном. О том, как маленькая уяз
 * ZeroNights 2017 (альфа-версия)
 * PHDays 2018 (первый релиз 2018.5 "Ход слоном")
 * NeoQUEST 2018 (дополнение 2018.9 "Виноградный Джо")
+* ZeroNights 2018 (дополнение 2018.11 "Превед, медвед!")
 
