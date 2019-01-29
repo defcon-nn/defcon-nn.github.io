@@ -1,0 +1,68 @@
+- title: Прибытие участников
+  technical: yes
+  css_class: technical
+  time: "10:30"
+
+- title: Открытие конференции. 
+  technical: yes
+  css_class: technical
+  time: "10:45"
+  description: Приветственное слово от DC7831
+
+- title: Как выявлять инструменты атак на Windows-инфраструктуру.
+  speaker: egor
+  time: "11:00"
+  description: В докладе будет представлен разбор трёх инструментов, которые широко используются для развития атак в Window-инфраструктуре (impacket, CME, koadic).
+  page: /0x0A/02-egor.html
+  
+- title: S in Docker stands for Security
+  speaker: stanislav_k
+  time: "11:45"
+  description:
+  page: /0x0A/03-stanislav.html
+
+- title: "Dojo для юного хакера (явки)... Пароли найдете сами!"
+  speaker: gordias
+  time: "12:30"
+  description: "Желание хакнуть есть у многих, желания получить статью - нет ни у кого. Где можно бесплатно, безопасно и главное законно тренировать свои навыки? Где &laquo;учат на хакеров&raquo;? На эти вопросы ответим в этом коротком докладе для начинающих, но уже не скрипт-кидди."
+  page: /0x0A/04-g0rdias.html
+
+- title: Обед, неформальное общение
+  technical: yes
+  css_class: technical
+  description: Пироги или пицца?
+  time: "13:00"
+
+- title: Microsoft Advanced Threat Analytics -- история анализа и борьбы.
+  speaker: konstantin_e
+  time: "14:00"
+  description: В ходе пентестов настоящему true-хакеру приходится постоянно сталкиваться с средствами защиты со стороны блютимов, которые к слову, становятся все изощреннее. В современной корп-сети уже просто одним антивирусом и security web-gateway уже никого не удивишь, даже если это Каспер с FireEYE. Все чаще встречается симбиоз защитных решений с современными SIEM и Threat Intell системами, являющимися настоящей грозой редтимеров. Об одном таком решении от Microsoft, а именно MS ATA, и пойдет речь в докладе.
+  page: /0x0A/06-konstantin.html
+
+- title: "Hacking IoT: DIY"
+  speaker: ilya_s
+  time: "14:45"
+  description: "В докладе будет рассмотрен процесс тестирования IoT на Hardware, Software и Radio уровнях: требуемые знания, оборудование, проблемы, с которыми вы можете столкнуться, и многое другое!"
+  page: /0x0A/07-ilya.html
+
+- title: "deviceKey: девайсы слишком много говорят"
+  speaker: roman
+  time: "15:30"
+  page: /0x0A/08-roman.html
+
+- title: Кофе-брейк
+  technical: yes
+  css_class: technical
+  time: "16:00"
+
+- title: Lampyre — платформа визуального анализа данных. Молниеносный OSINT.
+  speaker: andrey_s
+  time: "16:30"
+  description: "В рамках доклада будет рассказано о платформе, принципах визуального анализа данных, показаны примеры."
+  page: /0x0A/010-andrey.html
+
+- title: Круглый стол, посвященный проектированию нашего хакерского квеста DefHack 2.0 
+  speaker: wire_snark
+  time: "17:15"
+  description: "Для тех, кто не в курсе, расскажем про DefHack. В неформальной обстановке обсудим требования и архитектуру следующей версии квестовой платформы."
+  page: /0x0A/011-roundtable.html
