@@ -11,7 +11,9 @@
   page: /0x0Aw/01-konstantin.html
 
 - title: "Разработка модулей к платформе Lampyre"
-  speaker: andrey_s
+  speaker:
+   - andrey_s
+   - anton_z
   time: "15:00"
   description: "Разберем API к платформе (python), напишем в реалтайме модуль к приложению."
   page: /0x0Aw/02-andrey.html
