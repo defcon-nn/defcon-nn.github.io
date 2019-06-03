@@ -1,0 +1,216 @@
+Окружение для воркшопа "Введение в фаззинг" (Wire Snark).
+
+Ноутбук со свежим дистрибутивом Linux, можно в виртуальной машине (демо будет на Kali)
+Установить следующий софт:
+- gdb, gcc, clang + llvm (полный toolchain, нам понадобится asan и libfuzzer), python3, wireshark, git, radare2
+- nginx
+- radamsa (https://gitlab.com/akihe/radamsa)
+- afl (http://lcamtuf.coredump.cx/afl/)
+- afl-utils (https://gitlab.com/rc0r/afl-utils/blob/master/docs/INSTALL.md)
+- зависимости для cgit: libzip, OpenSSL (libssl, libcrypto)
+Склонировать репозиторий с демо-приложением:
+git clone https://gitlab.com/DC_ZN/chatserv
+git submodule init
+git submodule update
+
+Склонировать репозиторий с форком cgit и собрать его:
+git clone https://gitlab.com/defcon-nn/cgit
+git submodule init
+git submodule update
+make NO_LUA=1
+
+Рекомендуется настроить тестовый сетап cgit с одним репозиторием локально (см. его README и например https://wiki.archlinux.org/index.php/Cgit). На воркшопе будет показано, как это делать с использованием nginx.
+
+
+-----
+
+Установить: radare2 (hex editor)
+
+Установить: radamsa
+
+Установить:
+afl
+gdb
+afl-utils https://gitlab.com/rc0r/afl-utils/blob/master/docs/INSTALL.md
+git clone https://gitlab.com/rc0r/afl-utils
+virtualenv -p python3 venv
+. venv/bin/activate
+cd afl-utils
+virtualenv -p python3 venv
+python setup.py install
+
+For exploitable to work:
+echo "source /home/user/lib/venv/lib/python3.7/site-packages/exploitable-1.32_rcor-py3.7.egg/exploitable/exploitable.py" >> ~/.gdbinit
+
+Установить: clang, llvm
+
+===
+
+I. Введение в теорию фаззинга
+
+II. Рассмотрим протокол INHAT. Захват пакетов INHAT с помощью wireshark
+
+Создаём пользователя:
+adduser chatserv
+su chatserv
+
+Запускаю chatd, участники запускают chat-cli, коннектятся к моему инстансу
+
+После игр с чатом, участники запускают chatd у себя.
+Запускаем wireshark, включаем сниффинг на локалхосте.
+Запускаем chat-cli, генерируем простейшую сессию hi there.
+
+Сохраняем pcapng (на будущее)
+Сохраняем стрим от клиента в файл raw.
+Открываем файл в radare2, чтобы посмотреть:
+r2 hichat.raw
+V // visual mode
+
+(можно использовать hexdump например).
+
+III. Radamsa
+https://gitlab.com/akihe/radamsa
+
+```
+ $ # please please please fuzz your programs. here is one way to get data for it:
+ $ sudo apt-get install gcc make git wget
+ $ git clone https://gitlab.com/akihe/radamsa.git && cd radamsa && make && sudo make install
+ $ echo "HAL 9000" | radamsa
+```
+
+Запускаем радамсу:
+radamsa hichat.raw -n 100 -o 127.0.0.1:4000
+
+Создаем лог, передаем пользователю chatserv, запускаем сервер с логированием:
+chatd &> log.txt
+
+Ошибки валидации длины и контрольной суммы:
+cat log.txt | grep -i invalid
+cat log.txt | grep -i invalid | wc -l 
+
+Ошибки протокол маджика
+cat log.txt | grep -i magic | wc -l
+
+Хорошее распознание клиента (логин)
+cat log.txt | grep -i recognized$ | wc -l
+
+Ранний дисконнект клиента:
+cat log.txt | grep -i "scheduling disconnect" | wc -l
+
+IV. AFL
+http://lcamtuf.coredump.cx/afl/
+
+Какие проблемы наблюдаются при фаззинге сетевого сервера:
+
+1. Замена tcp-сокета на stdin меняет структуру входящего потока. В тесте мы получаем все данные сразу. В реальности может играть роль тот факт, что приходит несколько tcp-пакетов, и они обрабатываются последовательно.
+
+2. Замена tcp-сокета на stdin позволяет тестировать только соединение 1 клиента. Код поддержки многих клиентов не протестировать.
+
+3. Фаззеры выдают одно большое сообщение. А сервер ожидает цепочку из нескольких...
+
+4. Радамса при работе в режиме tcp-клиента: отсылает данные и закрывает соединение. Это не позволяет тестировать код, отвечающий за ответ. И может вызвать другое поведение - сервер увидит, что соединение закрыто, до того, как он обработал все данные (например, был баг в chatserv - данные отбрасывались).
+
+
+Фаззим stdin-версию. Для этого:
+- Убираем accept
+- Ставим завершение работы после того как всё прочитано
+- Добавляем successful login мессадж в начале
+- Убираем проверку checksum
+- Убираем проверку на длину > max (заменяем на = max в таком случае)
+
+Запуск afl:
+
+export CC=afl-gcc
+make clean
+# добавить -O2 в CFLAGS
+make
+
+Правим raw-файл, например сохраняем нужный мессадж из wireshark
+Создаем директорию afl_in, копируем туда наше исходное сообщение:
+ln -s hichat-msg-only.raw afl_in/
+
+(линки не работают, afl не следует им...)
+
+Запускаем afl под юзером chatserv (доступ к дирам должен быть дан, они созданы заранее):
+
+afl-fuzz -i ../inhat-pcap/afl_in -o ../inhat-pcap/afl_out ./chatd-stdin
+
+Правим core_pattern, если нужно:
+cat /proc/sys/kernel/core_pattern
+|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e
+# echo core > /proc/sys/kernel/core_pattern
+
+Проблемы с afl:
+- Логировать в файл (stdout/stderr отправляются в /dev/null)
+- Как-то странно запихивает данные в stdin - без правок timeout ловим.
+
+=============
+
+Видим крэши в afl.
+
+Воспроизведем крэш вручную.
+
+cat ./afl-output/crashes/id:00000... | ./chatd-stdin
+
+Анализируем в дебаггере:
+gdb ./chatd-stdin
+run < ./afl-output/crashes/id:000...
+
+Анализируем крэши автоматически.
+https://0x00sec.org/t/fuzzing-projects-with-american-fuzzy-lop-afl/6498
+
+afl-collect -d crashes.db -e gdb_script -r -rr ./output_crash_dir_from_afl_fuzz ./afl_collect_output_dir -j 8 -- /path/to/target
+
+gdb -x ./afl-collect-out/gdb_script
+
+Анализируем в дебаггере, фиксим баг.
+
+Воспроизводим на реальном сервере через ncat. 
+Сначала сохраняем логин-часть в raw, конкатенируем с крэш-самплом:
+
+cat login.raw id:0000x... > crash.raw
+cat crash.raw | nc localhost 4000
+
+В зависимости от версии nc может потребоваться отключить режим CL_DISCONNECT ранний. Или подвесить соединение...
+
+Отключим checksum validation:
+-DNO_CHECKSUM_VALIDATION в CFLAGS Makefile'а
+
+Пофиксим checksum в радаре...
+
+V. Использование ASAN
+
+https://github.com/google/sanitizers/wiki/AddressSanitizer
+Коротко, что он умеет детектировать 
+- Use after free
+- Heap/stack/global buffer overflow
+- Use after return/scope
+- Initialization order bugs
+- Memory leaks
+
+Собираем асан-версию, запускаем с двумя клиентами
+make allasan
+./chatd
+./chat-cli localhost 4000
+
+После 100го сообщения срабатывает gc, вылетая в heap-use-after-free.
+(для символов llvm-symbolizer должен быть в path)
+
+Фиксим баг.
+
+Теперь попробуем afl + asan. Для этого нужно:
+export CC=afl-clang-fast
+export AFL_USE_ASAN=1
+и передать -m none (отключить контроль памяти в приложении).
+
+Как видим, с асаном в 2 раза медленнее...
+Анализируем крэши...
+export ASAN_SYMBOLIZER_PATH=/usr/lib/llvm-6.0/bin/llvm-symbolizer
+
+====
+
+Возвращаемся к радамсе, таким скриптом её запускаем.. получаем крэш с асаном.
+
+
+
+
