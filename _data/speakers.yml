@@ -147,3 +147,16 @@ alexander_r:
   company: Digital Security, Санкт-Петербург
   bio: Пентестер в компании Digital Security, tg @webr0ck
   avatar: alexander_r.jpg
+
+mauro:
+  name: Mauro Eldritch
+  company: Argentine Ministry of Production, Buenos Aires
+  bio: "Mauro Eldritch is an Argentine hacker currently working as SecOps for Argentine Ministry of Production. Previous jobs include many government organisms such as Buenos Aires City Police, Federal Government, Ministry of Health, Ministry of Economy, and even FreeBSD.
+He was a Speaker at DEF CON Las Vegas, ROADSEC Brasil, DEVFEST Siberia, DragonJAR Colombia and P0SCON Iran."
+  avatar: mauro.jpg
+
+alexey_ryabchikov:
+  name: Алексей Рябчиков
+  company: Тинькофф, Нижний Новгород
+  bio: Backend Software Developer. В свободное время занимается проектами в области информационной безопасности.
+  avatar: alexey_ryabchikov.jpg

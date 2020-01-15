@@ -7,8 +7,18 @@
   css_class: technical
   description: Приветственное слово от DC7831
 
+- title: I fought the law and the law lost
+  speaker: mauro
+  description: "This is a series of talks aimed at surveying and publishing vulnerabilities of Argentine Armed/Sercurity Forces. We'll see 25+ hacktivism-motivated leaks on different kind of police and government systems:&#x20intelligence, organized crime, and even internal ones; whistleblowers, and more."
+  page: /0x0C/02-law-lost.html
+
 - title: Аудит локальной сети основанной на Windows AD. Подводные камни разных размеров
   speaker: alexander_r
   description: В этом докладе я хотел бы рассмотреть некоторые интересные способы проникновения в сеть, повышения привилегий и обхода наиболее распространённых настроек безопасности. Показать подводные камни, с которыми можно встретиться во время аудита и как с ними справится.
-  page: /0x0C/02-ad.html
+  page: /0x0C/03-ad.html
+
+- title: Как написать свой Твиттер и не прогореть Vol. 2
+  speaker: alexey_ryabchikov
+  description: Почти каждый месяц появляются новости об утечках данных пользователей из социальных сетей. На этой волне я написал twitter-о подобную социальную сеть с заложенной цепочкой уязвимостей для соревнований типа CTF. В рамках доклада я расскажу про безопасность современного web-сервиса со стороны разработчика. Для этого мы взломаем социальную сеть, проанализируем уязвимости и рассмотрим, как можно было их избежать на этапе проектирования и реализации.
+  page: /0x0C/04-twitter.html
 
