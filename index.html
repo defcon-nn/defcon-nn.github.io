@@ -12,21 +12,43 @@ layout: default
 
   <p> Место проведения: <a href="https://azimuthotels.com/Russia/azimut-hotel-nizhny-novgorod/">отель Азимут</a>. <br/> Адрес: г. Нижний Новгород, ул. Заломова, 2 (смотреть на <a href="https://yandex.ru/maps/47/nizhny-novgorod/?ll=43.980926%2C56.322965&mode=search&oid=1276729404&ol=biz&sctx=ZAAAAAgBEAAaKAoSCe8dNSbEAEZAEWg%2B527XKUxAEhIJ%2Bmj3%2F%2F%2Bs1j8Rql8lu2sL0z8iBQABAgQFKAowADiDqLnK%2FJy82W5AwZwGSAFVzczMPlgAagJydXAAnQHNzEw9oAEAqAEAvQFxs4lbwgEFvLDl4AQ%3D&sll=43.980926%2C56.322965&sspn=0.011072%2C0.009300&text=%D0%B0%D0%B7%D0%B8%D0%BC%D1%83%D1%82&z=16">Яндекс.картах</a>).
   <p> На период с 14 по 17 февраля 2020г для гостей конференции действует промо-код <b>DEFCON</b>, по которому предоставляется скидка 15% при бронировании с сайта отеля (сетевые системы бронирования типа Букинга могут предоставлять свои скидки, поэтому рекомендуем сравнить цены в них перед бронированием).
+  
+  <p> Во время мероприятия на площадке будут работать стенды с квестами, мини-докладами и другим интерактивом от
+  <ul>
+    <li>RedTeam-команды <a href="https://t.me/mis_team">[MIS]Team</a></li>
+    <li>сообщества <a href="https://dc7495.org">DC7495 (DEF CON Зеленоград)</a></li>
+    <li>нижегородского хакерспейса <a href="https://cadrspace.ru">Кадр</a></li>
+    <li>компании <a href="https://gardatech.ru">Гарда Технологии</a></li>
+  </ul>
+  
+  <h2>День первый. 15 февраля 2020г</h2>
 	<ul id="talks">
 		{% for talk in site.data.meetup_15_02_2020 %}
 		{% include talk.html %}
 		{% endfor %}
 	</ul>
+  <h2>День второй. 16 февраля 2020г</h2>
+  <p> Второй день посвящен практическим занятиям. Формат следующий: вначале ведущий воркшопа рассказывает теорию (небольшая презентация со сцены), затем заинтересовавшиеся переходят вместе с ним в рабочую зону, где проходит уже более плотное общение и работа.
+  <p> Для участия во всех воркшопах, кроме LockPick, вам потребуется ноутбук. Требования к тому, что нужно на него установить, читайте в описании конкретного воркшопа.
+
+	<ul id="talks">
+		{% for talk in site.data.meetup_16_02_2020 %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+
 	<div class="supporters">
 		Благодарим за предоставление помещений компанию <a href="https://gardatech.ru">Гарда Технологии</a>.
     <p>Благодарим за материальную поддержку:
         <ul>
            <li>компанию <a href="https://inforion.ru">Инфорион</a></li>
            <li>команду <a href="https://t.me/mis_team">[MIS]Team</a></li>
+           <li>компанию <a href="https://ptsecurity.com">Positive Technologies</a></li>
         </ul>
     <p>Благодарим за информационную поддержку:
 		<ul>
 		  <li>сообщество <a href="https://it52.info">IT52</a></li>
+		  <li>сообщество <a href="https://forum.reverse4you.org">R0 CREW</a></li>
 		  <li>телеграм-канал <a href="https://t.me/InfoBezEvents">Мероприятия по ИБ</a></li>
 	  </ul>
 	</div>
