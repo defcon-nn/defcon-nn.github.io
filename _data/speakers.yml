@@ -213,3 +213,9 @@ empty_jack:
   name: EmptyJack
   company: Security Expert, Москва
   bio: Security Expert
+
+mikhail_klimarev:
+  name: Михаил Климарев
+  company: Общество Защиты Интернета (ozi-ru.org), Москва
+  bio: исполнительный директор <a href="https://ozi-ru.org">Общества Защиты Интернета</a>, ведущий телеграм-канала <a href="https://t.me/zatelecom">@zatelecom</a>, региональный представитель компании Clostra (проекты NewNode, FireChat, BitTorrent).
+  avatar: mikhail_klimarev.jpg
