@@ -16,3 +16,9 @@
   page: /0x0D/03-rina.html
   time: "14:20"
 
+- title: DevSecOps в такси
+  speaker: vatclav_d
+  description: "Куда катится мир DevSecOps, как его красиво построить? Чего тут стоит бояться, а чего нет. Где в мире DevSecOps находятся непаханные поля и как их копать."
+  page: /0x0D/04-devsecops.html
+  time: "15:00"
+
