@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div id="events_table">
+	<h1> Тринадцатая 0x0D встреча в субботу, 17 апреля 2021 года </h1>
+
+	<p> Место проведения: творческое пространство "Гараж" от Сбера. <br/> Адрес: г. Нижний Новгород, ул. Октябрьская, 35 (вход со стороны ул. Варварской).
+
+	<ul id="talks">
+		{% for talk in site.data.meetup_17_04_2021 %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+
+	<div class="supporters">
+		Благодарим Сбер за предоставленную площадку.
+		<p>Благодарим за информационную поддержку:
+		<ul>
+			<li>сообщество <a href="https://it52.info">IT52</a></li>
+			<li>сообщество <a href="https://forum.reverse4you.org">R0 CREW</a></li>
+			<li>телеграм-канал <a href="https://t.me/InfoBezEvents">Мероприятия по ИБ</a></li>
+		</ul>
+	</div>
+</div>

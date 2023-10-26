@@ -12,7 +12,7 @@ gordias:
   name: Вадим g0rd1as Топтунов
   company: EPAM, Нижний Новгород
   avatar: vadim.jpg
-  bio: 
+  bio:
 rus_em:
   name: Евгений [RusEm] Казаев
   company: Саранск
@@ -36,7 +36,7 @@ igor:
 sobinov:
   name: Игорь Собинов
   company: Мера, Нижний Новгород
-  bio: 
+  bio:
 ilya:
   name: Илья Ленин
   avatar: ilya.jpg
@@ -76,7 +76,7 @@ peter_destructive:
   name: Peter Destructive
   company: it sec pro course, Москва
   bio: Ещё один специалист по информационной безопасности.
-  
+
 wire_snark:
   name: Wire Snark
   company: DC7831, НПП "Прима", Нижний Новгород
@@ -167,7 +167,7 @@ alexey_ryabchikov:
   company: Тинькофф, Нижний Новгород
   bio: Backend Software Developer. В свободное время занимается проектами в области информационной безопасности.
   avatar: alexey_ryabchikov.jpg
-  
+
 olga_s:
   name: Ольга Свиридова
   company: Ecommpay, Москва
@@ -232,3 +232,9 @@ vatclav_d:
   company: СитиМобил, Москва
   bio: Руководитель направления продуктовой и инфраструктурной безопасности в СитиМобил. 8 лет в практической ИБ. DevSecOps, пентестер
   avatar: vatclav_d.jpg
+
+scully:
+  name: Скалли
+  company: независимый исследователь
+  bio: профессионально занимаюсь киберразведкой (не ограничиваюсь только открытыми данными), веду небольшой научно-исследовательский проект по сигнальной разведке и профессиональный блог <a href="https://t.me/xbshsuwiow83">Dana Scully</a>
+  avatar: scully.jpg

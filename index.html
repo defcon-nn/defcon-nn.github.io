@@ -7,29 +7,33 @@ layout: default
 </div>
 
 <div id="events_table">
-  <h1> Тринадцатая 0x0D встреча в субботу, 17 апреля 2021 года </h1>
-  Вход свободный, но необходимо <a href="https://survey.defcon-nn.ru/index.php/632139?lang=ru">зарегистрироваться</a>. 
+	<h1> Пятая ежегодная конференция DEFCON Нижний Новгород </h1>
+	<p> Конференция пройдет в Нижнем Новгороде <strong>24-25 февраля 2024 года</strong> (в выходные). Точное место проведения будет объявлено позднее, следите за анонсами в нашем <a href="https://t.me/defcon_nn_ch">телеграм-канале</a>.
+	<p><a href="/cfp.html"><strong>Приглашаем вас принять участие в качестве спикера!</strong></a>
 
-  <p> Место проведения: творческое пространство "Гараж" от Сбера. <br/> Адрес: г. Нижний Новгород, ул. Октябрьская, 35 (вход со стороны ул. Варварской).
-  
-  <ul id="talks">
-	{% for talk in site.data.meetup_17_04_2021 %}
-	{% include talk.html %}
-	{% endfor %}
-  </ul>
+	<p>Вход на конференцию свободный, но необходимо зарегистрироваться. Форма регистрации будет доступна в начале 2024 года. Программа конференции формируется, ниже представлены подтвержденные доклады.
+
+	<h2>Трек информационной безопасности</h2>	
+	<ul id="talks">
+		{% for talk in site.data.meetup_security_24_02_2024 %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
 
 	<div class="supporters">
-	Благодарим Сбер за предоставленную площадку.
-    <p>Благодарим за информационную поддержку:
+		<p>Благодарим за информационную поддержку:
 		<ul>
-		  <li>сообщество <a href="https://it52.info">IT52</a></li>
-		  <li>сообщество <a href="https://forum.reverse4you.org">R0 CREW</a></li>
-		  <li>телеграм-канал <a href="https://t.me/InfoBezEvents">Мероприятия по ИБ</a></li>
+			<li>сообщество <a href="https://it52.info">IT52</a></li>
+			<li>сообщество <a href="https://forum.reverse4you.org">R0 CREW</a></li>
+			<li>сообщество <a href="https://t.me/DCG7812">DCG7812 DEFCON-RUSSIA | Санкт-Петербург</a></li>
+			<li>телеграм-канал <a href="https://t.me/InfoBezEvents">Мероприятия по ИБ</a></li>
+			<li>блог о кибер-разведке <a href="https://t.me/xbshsuwiow83">Dana Scully</a></li>
 	  </ul>
 	</div>
-  
-	<h2>Архив встреч за 2017-2020 годы</h2>
+
+	<h2>Архив встреч за 2017-2021 годы</h2>
 	<ul>
+		<li><a href="{{ "/0x0D/" | prepend: site.baseurl }}">Встреча 0x0D в субботу, 17 апреля 2021г</a></li>
 	    <li><a href="{{ "/0x0C/" | prepend: site.baseurl }}">Встреча 0x0C в выходные, 15-16 февраля 2020г</a></li>
         <li><a href="{{ "/0x0B/" | prepend: site.baseurl }}">Встреча 0x0B в субботу, 26 октября 2019г</a></li>
 		<li><a href="{{ "/0x0A/" | prepend: site.baseurl }}">Встреча 0x0A в выходные, 16-17 февраля 2019г</a></li>
