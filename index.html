@@ -20,6 +20,13 @@ layout: default
 		{% endfor %}
 	</ul>
 
+	<h2>Трек программного обеспечения</h2>	
+	<ul id="talks">
+		{% for talk in site.data.meetup_sw_24_02_2024 %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+
 	<div class="supporters">
 		<p>Благодарим за информационную поддержку:
 		<ul>
