@@ -244,3 +244,9 @@ egor_kharchenko:
   company: Лаборатория Касперского
   bio: Работаю ИТ-менеджером уже почти 15 лет. Последнее время занимаю позицию ИТ-бизнес партнера в Лаборатории Касперского.
   avatar: egor_kharchenko.jpg
+
+ilya_kotsuba:
+  name: Илья Коцюба
+  company: исследователь/red team/purple team, threat intelligence
+  bio: За 15 лет успеть поработать вирусным-аналитиком, расследовать продвинутые атаки, уйти в Offensive и Defensive.
+  avatar: ilya_kotsuba.jpg
