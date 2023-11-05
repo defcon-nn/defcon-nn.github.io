@@ -13,3 +13,9 @@ url: "http://defcon-nn.ru" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+# Blog
+collections:
+  posts:
+    output: true
+    permalink: /blog/:categories/:year/:month/:day/:title:output_ext

@@ -1,0 +1,17 @@
+{% assign blog = site.data.blogs[post.category] %}
+<li class="posts_elem">
+	<div class="time">
+		{% include date-ru.html date=post.date %}
+	</div>
+	<div class="speakers">
+		<div class="speaker-blog">
+			<div class="speaker-name">
+				<strong style="color: {{ blog.color }};">{{ blog.name }}</strong>
+			</div>
+		</div>
+	</div>
+	<div class="post_title">
+		<strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+	</div>
+	<div> {{ post.excerpt }} </div>
+</li>

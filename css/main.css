@@ -181,6 +181,44 @@ hr {
 	border: none;
 }
 
+#posts {
+	padding-left: 0px;
+}
+
+.posts_elem {
+	list-style-type: none;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	border: 1px solid #eaeaea;
+	border-radius: 15px;
+	padding: 15px 15px;
+}
+
+.posts_elem:hover {
+	background-color: #f5f5f5;
+	border-radius: 15px;
+}
+
+#posts li > div {
+	display: inline-block;
+	margin-right: 15px;
+	vertical-align: top;
+}
+
+#posts li .speaker > div  {
+	display: inline-block;
+	margin-right: 15px;
+	vertical-align: top;
+}
+
+#posts li > div:nth-child-last(1) {
+	margin-right: 0px;
+}
+
+.post_title {
+	max-width: 600px;
+}
+
 .speaker {
 	display: block;
 	margin-bottom: 10px;
@@ -198,6 +236,14 @@ hr {
 
 .speaker-name {
 	width: 175px;
+}
+
+.speaker-short .speaker-name {
+	width: auto;
+}
+
+.speaker-blog .speaker-name {
+	width: 250px;
 }
 
 .speaker-full {

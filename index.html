@@ -13,14 +13,14 @@ layout: default
 
 	<p>Вход на конференцию свободный, но необходимо зарегистрироваться. Форма регистрации будет доступна в начале 2024 года. Программа конференции формируется, ниже представлены подтвержденные доклады.
 
-	<h2>Трек информационной безопасности</h2>	
+	<h2>Трек информационной безопасности</h2>
 	<ul id="talks">
 		{% for talk in site.data.meetup_security_24_02_2024 %}
 		{% include talk.html %}
 		{% endfor %}
 	</ul>
 
-	<h2>Трек программного обеспечения</h2>	
+	<h2>Трек программного обеспечения</h2>
 	<ul id="talks">
 		{% for talk in site.data.meetup_sw_24_02_2024 %}
 		{% include talk.html %}
@@ -54,5 +54,10 @@ layout: default
 		<li><a href="{{ "/0x03/" | prepend: site.baseurl }}">Встреча 0x03 в воскресенье, 14 мая 2017г</a></li>
 		<li><a href="{{ "/0x02/" | prepend: site.baseurl }}">Встреча 0x02 в воскресенье, 2 апреля 2017г</a></li>
 		<li><a href="{{ "/0x01/" | prepend: site.baseurl }}">Встреча 0x01 в воскресенье, 12 февраля 2017г</a></li>
+	</ul>
+	<h2>Архив CTF и квестов</h2>
+	<ul>
+		<li><a href="{{ "/defhack.html" | prepend: site.baseurl }}">DefHack</a></li>
+		<li><a href="{{ "/ctf.html" | prepend: site.baseurl }}">DefconNN CTF Starter</a></li>
 	</ul>
 </div>
