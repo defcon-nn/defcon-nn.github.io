@@ -262,3 +262,9 @@ alexander_vir:
   company: независимый исследователь, Москва
   bio: Проектирую и эксплуатирую гетерогенные среды. Занимаюсь мобильной безопасностью, разрабатываю свой форк AOSP, <span class="inline_icon icon-telegram">Телеграм:</span><a href="https://t.me/rutheniumos">RutheniumOS</a>, с патчами безопасности от различных разработчиков, упором на приватность и интеграцией полезного функционала.
   avatar: alexander_vir.jpg
+
+pavel_stepanov:
+  name: Павел Степанов
+  company: независимый исследователь, Москва
+  bio: Занимаюсь тестированием мобильных и веб приложений, автор <a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=Beeline+Smart+Box">3-х CVE идентификаторов</a>, работаю в сфере пентеста более 3 лет. В свободное время<br/> - провожу различные исследования и пишу статьи в своем блоге на <a href="https://habr.com/ru/users/Pulsera/publications/articles/">Хабре</a>,<br/> - выступаю на конференциях, например сделал доклад про безопасность WiFi роутеров на <a href="https://www.youtube.com/watch?v=HL73yOW7YWU">PHD Origin</a>,<br/>- веду свой Телеграм-канал по переводу статей и книг на русский язык <span class="inline_icon icon-telegram">Телеграм:</span><a href="https://t.me/Ent_TranslateIB">"Перевод энтузиаста"</a>.
+  avatar: pavel_stepanov.jpg
