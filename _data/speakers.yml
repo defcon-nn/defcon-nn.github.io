@@ -274,3 +274,21 @@ alice_0bytes1:
   company: независимый исследователь, Москва
   bio: Автор Телеграм-канала <span class="inline_icon icon-telegram">Телеграм:</span><a href="https://t.me/technical_private_cat">0•Bytes•1</a>. В основном занимаюсь информационной безопасностью и тестированием на проникновение. Так же занимаюсь реверс-инжинирингом. Пишу на С и С++ профессионально, знаю Python, так же немного знаю Java и Kotlin.
   avatar: alice.jpg
+
+sergey_ivaschenko:
+  name: Сергей Иващенко
+  company: пентестер в компании Инфосистемы Джет, Москва
+  bio: OSCP, CRTO. Специализация - обход AV, внутрянка, Red Team, wifi. Регулярный участник The Standoff.
+  avatar: sergey_ivaschenko.jpg
+
+viktor_zvarykin:
+  name: Виктор Зварыкин
+  company: пентестер в компании Инфосистемы Джет, Москва
+  bio: OSCP, CRTO. Специализация - внутрянка, Red Team. Регулярный участник The Standoff, Top1 Standoff365.
+  avatar: viktor_zvarykin.jpg
+
+evgeny_artemyev:
+  name: Евгений Артемьев
+  company: пентестер в компании Инфосистемы Джет, Москва
+  bio: OSCP, CRTO, OSWP, eJPT. Специализация - внутрянка, Red Team, wifi, ddos, социальная инженерия. Регулярный участник The Standoff, в прошлом инженер СПД.
+  avatar: evgeny_artemyev.jpg
