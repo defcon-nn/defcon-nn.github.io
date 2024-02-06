@@ -337,6 +337,12 @@ alexey_grishin:
 
 andrey_levkin:
   name: Андрей Левкин
-  company: Руководитель продукта BI.ZONE Bug Bounty, Москва
+  company: руководитель продукта BI.ZONE Bug Bounty, Москва
   bio:
   avatar: andrey_levkin.jpg
+
+alexey_fedulaev:
+  name: Алексей Федулаев
+  company: DevSecOps Team Lead в Wildberries, Москва
+  bio: В информационной безопасности с 2011 года, занимаюсь безопасностью контейнерных перевозок. Спикер крупнейших российских конференций, состою в программном комитете DevOops Conf и SafeCode. Автор канала <span class="inline_icon icon-telegram">Телеграм:</span><a href="https://t.me/ever_secure">Ever Secure</a>.
+  avatar: alexey_fedulaev.jpg
