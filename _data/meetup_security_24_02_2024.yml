@@ -69,3 +69,8 @@
   description:
   page: /0x0E-security/09-secret.html
   time: ""
+
+- title: Закрытый круглый стол с экспертами
+  speaker: konstantin_e
+  time: "17:20"
+  page: /0x0E-security/0a-closed-circle.html

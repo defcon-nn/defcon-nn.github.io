@@ -9,27 +9,41 @@ layout: default
 <div id="events_table">
 	<h1> Пятая ежегодная конференция DEFCON Нижний Новгород </h1>
 	<p> Конференция пройдет в Нижнем Новгороде <strong>24-25 февраля 2024 года</strong> (в выходные) при участии и поддержке ННГУ им. Лобачевского. Университет предоставил свою площадку для проведения мероприятия во втором корпусе по адресу <a href="https://yandex.ru/maps?whatshere%5Bpoint%5D=43.982531406762824%2C56.29961076984044&whatshere%5Bzoom%5D=17.126915&ll=43.98253140706783%2C56.29961076898741&z=17.126915">Нижний Новгород, проспект Гагарина, 23к2</a>.
-	<p><a href="/cfp.html"><strong>Приглашаем вас принять участие в качестве спикера!</strong></a>
 
-	<p>Вход на конференцию свободный, но необходимо зарегистрироваться. Форма регистрации будет доступна в ближайшее время, следите за анонсами в нашем <a href="https://t.me/defcon_nn_ch">телеграм-канале</a>. Программа конференции формируется, ниже представлены подтвержденные доклады.
+	<p>Вход на конференцию свободный, но необходимо зарегистрироваться. Форма регистрации будет доступна в ближайшее время, следите за анонсами в нашем <a href="https://t.me/defcon_nn_ch">телеграм-канале</a>. Программа конференции представлена ниже.
 
-	<h2>Трек информационной безопасности</h2>
+	<h2>24 февраля, суббота</h2>
+	<h3>Главная сцена</h3>
 	<ul id="talks">
-		{% for talk in site.data.meetup_security_24_02_2024 %}
+		{% for talk in site.data.meetup_24_02_2024_main %}
 		{% include talk.html %}
 		{% endfor %}
 	</ul>
 
-	<h2>Трек программного обеспечения</h2>
+	<h3>Аудитория 323: воркшопы</h3>
 	<ul id="talks">
-		{% for talk in site.data.meetup_sw_24_02_2024 %}
+		{% for talk in site.data.meetup_24_02_2024_workshops %}
 		{% include talk.html %}
 		{% endfor %}
 	</ul>
 
-	<h2>Трек аппаратной части</h2>
+	<h3>Аудитория 314: CTF</h3>
 	<ul id="talks">
-		{% for talk in site.data.meetup_hw_24_02_2024 %}
+		{% for talk in site.data.meetup_24_02_2024_ctf %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+
+	<h2>25 февраля, воскресенье</h2>
+	<h3>Главная сцена</h3>
+	<ul id="talks">
+		{% for talk in site.data.meetup_25_02_2024_main %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+	<h3>Аудитория 323: CTF </h3>
+	<ul id="talks">
+		{% for talk in site.data.meetup_24_02_2024_ctf %}
 		{% include talk.html %}
 		{% endfor %}
 	</ul>
@@ -48,6 +62,7 @@ layout: default
 			<li>телеграм-канал <a href="https://t.me/technical_private_cat">0•Bytes•1</a></li>
 			<li>телеграм-канал <a href="https://t.me/tech_b0lt_Genona">Технологический Болт Генона</a></li>
 			<li>телеграм-канал <a href="https://t.me/ever_secure">Ever Secure</a></li>
+			<li>телеграм-канал <a href="https://t.me/wireless_snark">Беспроводной Снарк</a></li>
 	  </ul>
 	</div>
 

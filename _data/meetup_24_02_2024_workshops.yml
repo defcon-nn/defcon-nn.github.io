@@ -1,0 +1,33 @@
+- title: Воркшоп по Air gap
+  speaker: alice_0bytes1
+  description: "Во время воркшопа будут даны теоретические основы и практические навыки атак и защиты компьютеров, изолированных от сети \"воздушным зазором\" (air gap):<br/>
+- вы разберётесь в угрозах для air gap, изучите основы безопасности таких систем<br/>
+- вы посмотрите на проведение атаки на air gap, это поможет вам увидеть угрозу в лицо<br/>
+- вы получите опыт настройки защиты устройств air gap"
+  page: /0x0E-security/03-air-gap.html
+  time: "11:00"
+
+- title: Обед
+  technical: yes
+  css_class: technical
+  time: "13:40"
+
+- title: Как сделать контейнеры и работу с ними безопасными
+  speaker: rusdacent
+  description: "Выступление будет построено в виде диалога с аудиторией, в котором поговорим о том:<br/>
+- Что отслеживать ещё на этапе написания Dockerfile<br/>
+- Что использовать при организации pipeline<br/>
+- Как взаимодействовать с registry<br/>
+- Что использовать в контейнерных оркестраторах"
+  page: /0x0E-security/06-containers.html
+  time: "14:40"
+
+- title: Кофе-брейк
+  technical: yes
+  css_class: technical
+  time: "16:20"
+
+- title: Закрытый круглый стол с экспертами
+  speaker: konstantin_e
+  time: "17:20"
+  page: /0x0E-security/0a-closed-circle.html
