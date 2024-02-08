@@ -100,7 +100,7 @@ konstantin_e:
 
 roman:
   name: Роман Ананьев
-  company: DC20e6, Ульяновск
+  company: DC78422, Ульяновск
   bio:
 
 andrey_s:
@@ -346,3 +346,11 @@ alexey_fedulaev:
   company: DevSecOps Team Lead в Wildberries, Москва
   bio: В информационной безопасности с 2011 года, занимаюсь безопасностью контейнерных перевозок. Спикер крупнейших российских конференций, состою в программном комитете DevOops Conf и SafeCode. Автор канала <span class="inline_icon icon-telegram">Телеграм:</span><a href="https://t.me/ever_secure">Ever Secure</a>.
   avatar: alexey_fedulaev.jpg
+
+duke_barman:
+  name: dukeBarman
+  company: Яндекс, Санкт-Петербург
+
+anton_durnov:
+  name: Антон Дурнов
+  company: DC78422, Ульяновск
