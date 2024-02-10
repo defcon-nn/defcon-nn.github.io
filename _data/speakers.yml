@@ -348,8 +348,10 @@ alexey_fedulaev:
   avatar: alexey_fedulaev.jpg
 
 duke_barman:
-  name: dukeBarman
+  name: Борис "dukeBarman"
   company: Яндекс, Санкт-Петербург
+  bio: Начал карьеру в качестве инженера и разработчика, однако страсть к исследованию ПО привела меня в мир обратной разработки. И вот уже более 10 лет я занимаюсь различными вопросами информационной безопасности. Несколько лет назад фокус сместился в сторону DevSecOps. Веду личный канал <span class="inline_icon icon-telegram">Телеграм:</span><a href="https://t.me/dukebarmanpro">dukeBarman's notes</a>.
+  avatar: duke_barman.jpg
 
 anton_durnov:
   name: Антон Дурнов
