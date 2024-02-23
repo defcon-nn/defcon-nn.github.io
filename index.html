@@ -21,7 +21,7 @@ layout: default
 		{% endfor %}
 	</ul>
 
-	<h3>Аудитория 310: воркшопы</h3>
+	<h3>Аудитория 310: воркшоп и круглый стол</h3>
 	<ul id="talks">
 		{% for talk in site.data.meetup_24_02_2024_workshops %}
 		{% include talk.html %}
@@ -31,6 +31,20 @@ layout: default
 	<h3>Аудитория 314: CTF</h3>
 	<ul id="talks">
 		{% for talk in site.data.meetup_24_02_2024_ctf %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+
+	<h3>Аудитория 322: тренинг</h3>
+	<ul id="talks">
+		{% for talk in site.data.meetup_24_02_2024_game %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+
+	<h3>Аудитория 324: воркшоп</h3>
+	<ul id="talks">
+		{% for talk in site.data.meetup_24_02_2024_workshops2 %}
 		{% include talk.html %}
 		{% endfor %}
 	</ul>
