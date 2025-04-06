@@ -7,16 +7,58 @@ layout: default
 </div>
 
 <div id="events_table">
-	<h1> Шестая конференция DEFCON Нижний Новгород </h1>
-	<a href="startup.mts.ru"><img style="float: right; margin-left: 10pt;" src="images/red.svg" alt="Логотип MTS" width="350" /></a>
-	<p> Конференция пройдёт в Нижнем Новгороде <strong>26 апреля 2025 года</strong> при участии и поддержке "StartupHub NN". "StartupHub NN" предоставил свою площадку для проведения мероприятия во втором корпусе по адресу <a href="https://yandex.ru/profile/204542868332">Нижний Новгород, ул. Пискунова, 16, Нижний Новгород</a>.
+	<h1> Пятая ежегодная конференция DEFCON Нижний Новгород </h1>
+	<a href="http://www.unn.ru"><img style="float: right; margin-left: 10pt;" src="images/unn_logo_ru.png" alt="Логотип ННГУ" width="350" /></a>
+	<p> Конференция прошла в Нижнем Новгороде <strong>24-25 февраля 2024 года</strong> (в&nbsp;выходные) при участии и поддержке ННГУ им. Лобачевского. Университет предоставил свою площадку для проведения мероприятия во втором корпусе по адресу <a href="https://yandex.ru/maps?whatshere%5Bpoint%5D=43.982531406762824%2C56.29961076984044&whatshere%5Bzoom%5D=17.126915&ll=43.98253140706783%2C56.29961076898741&z=17.126915">Нижний Новгород, проспект Гагарина, 23к2</a>.
 
 	<p>Программа конференции представлена ниже.</p>
 
-	<h2>26 апреля 2025, суббота</h2>
+	<h2>24 февраля, суббота</h2>
 	<h3>Главная сцена</h3>
 	<ul id="talks">
-		{% for talk in site.data.meetup_security_26_04_2025_main %}
+		{% for talk in site.data.meetup_24_02_2024_main %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+
+	<h3>Аудитория 310: воркшоп и круглый стол</h3>
+	<ul id="talks">
+		{% for talk in site.data.meetup_24_02_2024_workshops %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+
+	<h3>Аудитория 314: CTF</h3>
+	<ul id="talks">
+		{% for talk in site.data.meetup_24_02_2024_ctf %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+
+	<h3>Аудитория 322: тренинг</h3>
+	<ul id="talks">
+		{% for talk in site.data.meetup_24_02_2024_game %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+
+	<h3>Аудитория 324: воркшоп</h3>
+	<ul id="talks">
+		{% for talk in site.data.meetup_24_02_2024_workshops2 %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+
+	<h2>25 февраля, воскресенье</h2>
+	<h3>Главная сцена</h3>
+	<ul id="talks">
+		{% for talk in site.data.meetup_25_02_2024_main %}
+		{% include talk.html %}
+		{% endfor %}
+	</ul>
+	<h3>Аудитория 309: CTF </h3>
+	<ul id="talks">
+		{% for talk in site.data.meetup_24_02_2024_ctf %}
 		{% include talk.html %}
 		{% endfor %}
 	</ul>
@@ -24,11 +66,14 @@ layout: default
 	<div class="supporters">
 		<p>Благодарим за материальную поддержку золотых спонсоров:
 			<ul>
-				<li><a href=" "></a></li>
+				<li><a href="https://prima-systems.ru/">НПП Прима</a></li>
+				<li><a href="https://gardatech.ru/">Гарда Технологии</a></li>
+				<li><a href="https://ctdl.ru/">Цитадель</a></li>
 			</ul>
 		<p>Благодарим за материальную поддержку серебряных спонсоров:</p>
 			<ul>
-				<li><a href=" "></a></li>
+				<li><a href="https://stm-labs.ru/ru/">STM Labs</a></li>
+				<li><a href="https://www.ptsecurity.com/ru-ru/">Positive Technologies</a></li>
 			</ul>
 
 		<p>Благодарим за информационную поддержку:
@@ -37,6 +82,7 @@ layout: default
 			<li>сообщество <a href="https://forum.reverse4you.org">R0 CREW</a></li>
 			<li>сообщество <a href="https://t.me/DCG7812">DCG7812 DEFCON-RUSSIA | Санкт-Петербург</a></li>
 			<li>телеграм-канал <a href="https://t.me/InfoBezEvents">Мероприятия по ИБ</a></li>
+			<li>блог о кибер-разведке <a href="https://t.me/xbshsuwiow83">Dana Scully</a></li>
 			<li>телеграм-канал <a href="https://t.me/rutheniumos">RutheniumOS</a></li>
 			<li>телеграм-канал <a href="https://t.me/Ent_TranslateIB">Перевод энтузиаста</a></li>
 			<li>телеграм-канал <a href="https://t.me/dukebarmanpro">dukeBarman's notes</a></li>
@@ -47,12 +93,39 @@ layout: default
 	  </ul>
 	</div>
 
-	<h2>Архив встреч за 2017-2024 годы</h2>
+	<h3> Финансовый отчёт </h3>
+	Расходы:
 	<ul>
-		<li><a href="{{ "/0x0E/" | prepend: site.baseurl }}">Встреча 0x0E в выходные, 24-25 февраля 2024 года</a></li>
+		<li> Кофе-брейки, пицца: 191т </li>
+		<li> Компенсация спикерам: 90т </li>
+		<li> Компенсация волонтёрам: 25т </li>
+		<li> Мерч (футболки, бейджи, настолки и др.): 61т </li>
+		<li> Фотографы:	13т </li>
+		<li> Аренда видеооборудования: 20т </li>
+		<li> Видеомонтаж: 25т </li>
+		<li><strong>Итого: 425т</strong></li>
+	</ul>
+	Поступления:
+	<ul>
+		<li>От компаний-спонсоров: 375т</li>
+		<li>Донат от участников: 69т</li>
+		<li><strong>Итого: 444т</strong></li>
+	</ul>
+
+	<h3> Статистика конференции </h3>
+	<ul>
+		<li>Количество участников: 210 (200 бейджей в первый день, 10 во второй)</li>
+		<li>Количество спикеров: 27 </li>
+		<li>Количество докладов: 17</li>
+		<li>Количество членов команды на площадке: 26</li>
+		<li>R</li>
+	</ul>
+
+	<h2>Архив встреч за 2017-2021 годы</h2>
+	<ul>
 		<li><a href="{{ "/0x0D/" | prepend: site.baseurl }}">Встреча 0x0D в субботу, 17 апреля 2021г</a></li>
-		<li><a href="{{ "/0x0C/" | prepend: site.baseurl }}">Встреча 0x0C в выходные, 15-16 февраля 2020г</a></li>
-		<li><a href="{{ "/0x0B/" | prepend: site.baseurl }}">Встреча 0x0B в субботу, 26 октября 2019г</a></li>
+	    <li><a href="{{ "/0x0C/" | prepend: site.baseurl }}">Встреча 0x0C в выходные, 15-16 февраля 2020г</a></li>
+        <li><a href="{{ "/0x0B/" | prepend: site.baseurl }}">Встреча 0x0B в субботу, 26 октября 2019г</a></li>
 		<li><a href="{{ "/0x0A/" | prepend: site.baseurl }}">Встреча 0x0A в выходные, 16-17 февраля 2019г</a></li>
 		<li><a href="{{ "/0x09/" | prepend: site.baseurl }}">Встреча 0x09 в субботу, 28 июля 2018г</a></li>
 		<li><a href="{{ "/0x08/" | prepend: site.baseurl }}">Встреча 0x08 в выходные, 17-18 февраля 2018г</a></li>
