@@ -10,14 +10,14 @@
   time: "11:00"
 
 - title: Название уточняется
-  speaker: duke_barman
+  speaker:
   description: ""
   page: /0x0F/00-topic_one.html
   time: "11:10"
 
-- title: Название уточняется
+- title: "FROM im:age to Kind:Cluster"
   speaker: rusdacent
-  description: ""
+  description: "На воркшопе пройдёмся сначала по теории (от образа к кластеру Kubernetes) и инструментам, а потом попробуем посмотреть, как приложение, которое нам нужно защищать и оберегать, выглядит в окружении и на что стоит обращать внимание."
   page: /0x0F/01-topic_two.html
   time: "12:00"
 
@@ -26,13 +26,13 @@
   css_class: technical
   time: "13:30"
 
-- title: Название уточняется
+- title: "2fa не 2fa"
   speaker: altynos
   description: ""
   page: /0x0F/02-topic_three.html
   time: "14:30"
 
-- title: Название уточняется
+- title: "Веб-Анархия #4 или "Да может хватит уже?""
   speaker: roman
   description: ""
   page: /0x0F/03-topic_four.html
@@ -43,7 +43,7 @@
   css_class: technical
   time: "16:10"
 
-- title: Проведение проверок на НДВ
+- title: "Понаписали тут, а мне проверяй... Ода лени при проведении проверок на НДВ."
   speaker: blackzert
   description: "Понаписали тут, а мне проверяй... Ода лени при проведении проверок на НДВ."
   page: /0x0F/04-topic_five.html
