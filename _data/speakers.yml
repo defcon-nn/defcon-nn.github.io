@@ -102,6 +102,7 @@ roman:
   name: Роман Ананьев
   company: DC78422, Ульяновск
   bio:
+  avatar: roman.png
 
 andrey_s:
   name: Андрей Схоменко
@@ -362,3 +363,16 @@ elena_yakimova:
   company: НПП «Прима», Нижний Новгород
   bio: начальник отдела организации труда и развития персонала НПП «Прима», бизнес-тренер с 10-ти летним опытом проведения обучения soft skills в крупных компаниях города&colon; ООО «Группа «ГАЗ», АО «НМЖК», НАО «Гидромаш», ГК «Провенто» и др. Cертифицированный игропрактик («Эра перемен», «Управленческий круговорот», «Риторический покер»), коуч ICF ACSTH.
   avatar: elena_yakimova.jpg
+
+altynos
+  name: Эмиль Алтынбаев
+  company: ГК "Солар"
+  bio: Ведущий специалист по анализу защищенности внешней инфраструктуры
+  avatar: altynos.png
+
+blackzert
+  name: Ilya Smit
+  company: TwoDrunkMen
+  bio: Security Researcher with vaste expirience in offensive security
+  avatar: blackzert.jpg
+  
